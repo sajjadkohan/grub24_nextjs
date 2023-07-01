@@ -1,0 +1,44 @@
+.bannerSearch{width: 100%;direction: rtl;text-align: center;height: 53vw;}
+.bannerSearch .backStyle{width: 100%;height: auto;}
+.bannerSearch .imageBack{position: absolute;width: 70%;right: 0px;}
+.bannerSearch .containerFluid{position: relative;text-align: left;direction: ltr;margin-top: 16%;margin-bottom: 4%;}
+.bannerSearch .searchParent{max-width: 50%;margin: 0;}
+.bannerSearch .footerText{border-bottom: 1px solid #989898;padding-bottom: 2px;position: absolute;bottom: 0px;color: #707070;font-size: 14px;}
+
+/*searchAddress*/
+.searchAddress .title{display: flex;justify-content: start;direction: ltr;align-items: center;flex-wrap: wrap;}
+.searchAddress .title .h1{color: #333333;font-size: 42px;margin-right: 10px;}
+.searchAddress .rotateText{font-size: 37px!important;width: 200px;min-width: 200px;min-height: 53px;}
+.searchAddress .formDiv .text{font-weight: 400;font-size: 16px;margin-left: 14px;color: #393636;margin-bottom: 10px;}
+.searchAddress .formDiv .text:last-child{margin-top: 18px;}
+.searchAddress .formDiv .text button{font-size: 14px;margin-right: 3px;}
+.searchAddress .formDiv .parentInput{width: 58%;position: relative;}
+.searchAddress .formDiv .iconMap{position: absolute;right: 9px;top: 6px;}
+.searchAddress .formDiv .grubBtn{
+    margin-left: 10px;
+    padding: 10px 23px;
+    border: none;
+    background: #058EF0;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 9px 18px #058ef070;
+    font-weight: 500;
+    font-size: 11px;
+    transition: 0.3s all;
+}
+.searchAddress .formDiv .grubBtn:hover{transform: translateY(4px);}
+
+@media (max-width:767px) {
+    .bannerSearch{height: auto;}
+    .bannerSearch .searchParent{max-width: 100%;}
+    .bannerSearch .containerFluid{position: relative;text-align: left;direction: ltr;margin-top: 16%;margin-bottom: 4%;width: 90%;}
+    .searchAddress .title .h1{color: #333333;font-size: 30px;margin-right: 10px;}
+    .searchAddress .rotateText span{font-size: 30px!important;}
+    .searchAddress .formDiv .text{margin-top: 20px;}
+    form.form{display: block;}
+    .searchAddress .formDiv .parentInput{width: 100%;position: relative;}
+    .searchAddress .formDiv .grubBtn{width: 100%;margin-top: 10px;margin-left: 0px;box-shadow: none;}
+    .bannerSearch .footerText{display: none;}
+    .searchAddress .formDiv .text:last-child{text-align: center;}
+
+}

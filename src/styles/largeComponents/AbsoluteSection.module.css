@@ -1,0 +1,89 @@
+.absoluteSection{
+    margin-top: -13%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 1px 4px 19px #b6b6b670;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;flex-wrap: wrap;
+}
+.absoluteSection .left{width: 45%;color: #333333;padding-left: 50px;display: flex;
+flex-wrap: wrap;align-items: baseline;}
+.absoluteSection .right{width: 45%;}
+.absoluteSection .imageRight{width: 100%;height: auto;border-radius: 12px;}
+.absoluteSection .left .subTitle{font-size: 14px;margin-top: 20px;width: 100%;}
+.absoluteSection .left .title{font-size: 30px;margin-top: 20px;width: 100;;}
+.absoluteSection .desc{font-size: 14px;line-height: 23px;
+    color: #393636;
+    letter-spacing: 1px;
+    margin-top: 29px;
+    width: 79%;}
+.absoluteSection .left .btn{
+    background: #0A99FF;
+border-radius: 13px;
+color: #fff;
+font-family: Roboto;
+font-weight: 500;
+border: none;
+box-shadow: none;
+padding: 10px 16px;
+font-size: 14px;
+transition: 0.3s all;
+cursor: pointer;
+display: inline-block;margin-top: 25px;
+}
+.absoluteSection .left .btn:hover{transform: translateY(4px);background: #048DEF;}
+
+/*mobileAppSection*/
+.mobileAppSection{background: url('../../../public/images/mobileAppSection/grubBack.png') no-repeat;background-size: 100%;padding: 100px 0px;}
+.mobileAppSection .right{display: flex;justify-content: start;position: relative;width: 50%;}
+.mobileAppSection .left{width: 50%;color: #333333;}
+.mobileAppSection .right img{width: 368px;height: 563px;}
+.mobileAppSection .right .mobileImage{position: absolute;left: 143px;bottom: 56px;}
+.mobileAppSection .left .subTitle{font-size: 14px;margin-top: 20px;width: 100%;}
+.mobileAppSection .left .title{font-size: 24px;width: 100;}
+.mobileAppSection .desc{font-size: 14px;line-height: 20px;color: #393636;margin-top: 29px;width: 60%;}
+/* .mobileAppSection .left .qrCode{width: 300px;} */
+.mobileAppSection .left .qrCode img{width: 184px;height: 184px;margin-top: 30px;}
+.mobileAppSection .parentDownload{margin-top: 30px;display: flex;width: 73%;
+    justify-content: start;align-items: center;flex-wrap: wrap;}
+.mobileAppSection .parentDownload .btnDownload img{width: 135px;height: 40px;margin-right: 40px;}
+.mobileAppSection .left .desc2{color: #333333;font-size: 14px;margin-top: 20px;}
+.mobileAppSection .left .desc3{color: #333333;font-size: 16px;margin-top: 23px;}
+
+
+@media (max-width:767px) {
+    .mobileAppSection .left{width: 100%;order: 2;padding-left: 0px;}
+    .absoluteSection .right{width: 100%;order: 1;}
+    .absoluteSection{margin-top: -20%;}
+    .absoluteSection .desc{width: 100%;}
+    .mobileAppSection .left{width: 100%;}
+    .mobileAppSection .right{width: 100%;justify-content: start;flex-wrap: wrap;}
+    .mobileAppSection > div{flex-wrap: wrap;width: 95%;}
+    .mobileAppSection .right .mobileImage{position: absolute;left: 23px;bottom: 26px;}
+    .mobileAppSection{padding: 70px 0px;
+        background: url('../../../public/images/mobileAppSection/grubBack.png') repeat;
+        background-size: auto;}
+    .mobileAppSection .right img{width: 208px;height: 318px;}
+    .mobileAppSection .right .mobileImage{position: absolute;left: 24%;bottom: 8%;}
+    .mobileAppSection .textInMobile{width: 100%;text-align: center;}
+    .mobileAppSection .textInMobile .subTitle{font-size: 14px;margin-top: 20px;width: 100%;}
+    .mobileAppSection .textInMobile .title{font-size: 24px;width: 100;}
+    .mobileAppSection .textInMobile .desc{
+        color: #746c6c;
+        font-size: 14px;
+        margin: 21px auto 50px auto !important;
+        ;width: 90%;
+    }
+.mobileAppSection .left .qrCode img{width: 150px;height: 150px;margin: 30px auto;}
+.mobileAppSection .left .qrCode{text-align: center;}
+.mobileAppSection .parentDownload{width: 100%;justify-content: center;}
+.mobileAppSection .parentDownload a{display: block;width: 100%;text-align: center;}
+.mobileAppSection .parentDownload a:first-child img{transform: scale(0.9);}
+.mobileAppSection .parentDownload .btnDownload img{margin: 10px 0px;}
+.mobileAppSection .desc2,.mobileAppSection .desc3{text-align: center;}
+}

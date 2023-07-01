@@ -1,0 +1,34 @@
+.subsCribe {padding-top: 50px;}
+.subsCribe .text{
+    width: 100%;
+text-align: left;
+font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+margin-bottom: 19px;
+padding-left: 8px;
+}
+.subsCribe input{
+    padding: 10px;
+border: none;
+box-shadow: 0px 6px 20px #d2d2d2;
+border-radius: 6px;
+width: 274px;font-size: 13px;
+color: #666;
+}
+.subsCribe input:focus{outline: none;}
+.subsCribe button{
+    padding: 11px 23px;
+margin-left: 17px;
+border: none;
+background: #058EF0;
+color: #fff;
+font-family: Roboto;
+font-weight: 500;
+border-radius: 6px;
+font-size: 12px;
+box-shadow: 0px 1px 9px #058ef0;
+transition: 0.3s all;
+}
+.subsCribe button:hover{transform: translateY(3px);box-shadow: 0px 1px 9px #058ef04c;}
+

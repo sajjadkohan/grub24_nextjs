@@ -1,0 +1,22 @@
+.footer{position: relative;}
+.footer .content{display: flex;padding: 40px;border-radius: 18px;background: #393636;margin-top: 35px;margin-bottom: 10px;color: #fff;}
+.btnDownload img{width: 135px;height: 40px;margin-right: 40px;margin-top: 10px;}
+.footer .content ul li{color: #bdbdbd;padding-left: 25px;margin-top: 20px;list-style: none;position: relative;}
+.footer .content ul li::before{content:"";width: 10px;height: 2px;position: absolute;left: 0px;bottom: 8px;background: #f2f2f2;}
+.footer .content .desc{margin-top: 20px;margin-bottom: 20px;font-weight: 300;line-height: 21px;font-size: 14px;}
+.footer .bottomDiv .left .logoGrub{width: 28px;height: 35px;}
+.footer .bottomDiv{padding: 5px 15px;font-size: 14px;display: flex;align-items: center;justify-content: space-between;}
+.footer .bottomDiv .left .text{margin-left: 10px;}
+.footer .bottomDiv .right .text{margin-right: 10px;}
+.footer .bottomDiv .right ul li{margin: 0px 10px;list-style: none;}
+.footer .bottomDiv .right ul li:last-child{margin-right: 0px;}
+@media (max-width:767px) {
+    .footer .content{display: block;border-radius: 0px;}   
+    .w100Xs{width: 100%;}
+    .footer .bottomDiv{display: flex;width: 100%;flex-wrap: wrap;}
+    .footer .bottomDiv .right,.footer .bottomDiv .left{width: 100%;}
+    .footer .bottomDiv .left{order: 1;margin-top: 10px;}
+}
+
+
+

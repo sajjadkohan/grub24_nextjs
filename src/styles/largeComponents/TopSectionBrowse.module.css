@@ -1,0 +1,30 @@
+.topMap{height: 0vw;transition: 0.4s all;overflow: hidden;}
+.topMap100{height: 40vw!important;}
+.toggleBottonMap{
+position: relative;
+background: #fff;
+bottom: 2px;
+display: flex;
+width: 200px;
+align-items: center;
+padding: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+box-shadow: 0px 6px 30px #cdcdcd;
+left: 80px;
+border-radius: 0px 0px 10px 10px;
+justify-content: space-between;
+padding-top: 14px;
+transition: 0.3s all;
+transform: translateY(4%);
+padding-bottom: 12px;
+cursor: pointer;
+border: none;}
+
+.rotateSvg{transform: rotate(180deg);}
+.close{border-radius: 10px 10px 0px 0px!important;}
+
+
+
+
+
