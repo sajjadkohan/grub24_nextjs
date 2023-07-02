@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
-import styles from '../../styles/largeComponents/SwiperSlider.module.css';
+import styles from '../../global/GlobalSwiper.module.css';
 
 
 // import "./styles.css";

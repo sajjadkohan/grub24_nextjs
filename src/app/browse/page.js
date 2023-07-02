@@ -1,7 +1,7 @@
 import React from 'react'
 import TopSectionBrowse from '@/components/largeComponents/TopSectionBrowse'
 import styles from '../../styles/largeComponents/BrowsePage.module.css';
-import FilterComponent from '@/components/largeComponents/FilterComponent';
+import FilterComponent from '@/components/global/components/filter/FilterComponent';
 import GrubSwiper from '@/components/smallComponents/GrubSwiper';
 import banner1 from '../../../public/images/grubSwiper/banner1.jpeg';
 import banner2 from '../../../public/images/grubSwiper/banner2.webp';
@@ -36,8 +36,8 @@ const browsePage = () => {
         <div className={styles.right}>
           <GrubSwiper data={grubSwiperData}/>
         </div>
-        s
       </div>
+      
     </div>
   )
 }

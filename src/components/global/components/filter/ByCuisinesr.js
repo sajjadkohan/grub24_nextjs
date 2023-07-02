@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import styles from '../../../styles/largeComponents/Filter.module.css'
+import styles from '../../components/filter/Filter.module.css'
 import {Scrollbar} from 'react-scrollbars-custom'
 
 

@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import styles from '../../styles/largeComponents/BannerSearch.module.css';
+import styles from '../BennerSearch/BannerSearch.module.css';
 import ReactRotatingText from 'react-rotating-text';
  
 const SearchAddress = () => {

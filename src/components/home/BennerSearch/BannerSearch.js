@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../../styles/largeComponents/BannerSearch.module.css';
-import ParallaxImg from '../smallComponents/ParallaxImg';
-import SearchAddress from '../smallComponents/SearchAddress';
+import styles from '../BennerSearch/BannerSearch.module.css';
+import ParallaxImg from '../../smallComponents/ParallaxImg';
+import SearchAddress from '../SearchAddress/SearchAddress';
 import Link from 'next/link';
 
 const BannerSearch = () => {

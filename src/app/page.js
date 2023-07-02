@@ -1,9 +1,9 @@
-'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css';
 
 // components
-import BannerSearch from '@/components/largeComponents/BannerSearch';
+import BannerSearch from '@/components/home/BennerSearch/BannerSearch';
 import SwiperSlider from '@/components/largeComponents/SwiperSlider';
 
 // image
@@ -26,8 +26,8 @@ import cuisineImage10 from '../../public/images/cuisine/a10.png';
 import cuisineImage11 from '../../public/images/cuisine/a11.png';
 
 import SwiperSliderLong from '@/components/largeComponents/SwiperSliderLong';
-import AbsoluteSection from '@/components/largeComponents/AbsoluteSection';
-import CuisineSwiper from '@/components/largeComponents/CuisineSwiper';
+import AbsoluteSection from '@/components/home/AbsoluteSection/AbsoluteSection';
+import CuisineSwiper from '../components/home/CuisineSwiper/CuisineSwiper';
 import MobileAppSection from '@/components/largeComponents/MobileAppSection';
 import SwiperCities from '@/components/largeComponents/SwiperCities';
 import MoreInfo from '@/components/largeComponents/MoreInfo';

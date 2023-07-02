@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/largeComponents/AbsoluteSection.module.css';
+import styles from '../home/AbsoluteSection/AbsoluteSection.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 

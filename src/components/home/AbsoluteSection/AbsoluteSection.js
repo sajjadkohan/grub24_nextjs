@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/largeComponents/AbsoluteSection.module.css'
-import image from '../../images/rightImage.webp';
+import styles from '../AbsoluteSection/AbsoluteSection.module.css'
+import image from '../../../images/rightImage.webp';
 import Image from 'next/image';
 import Link from 'next/link';
 

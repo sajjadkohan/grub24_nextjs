@@ -39,7 +39,7 @@ display: inline-block;margin-top: 25px;
 .absoluteSection .left .btn:hover{transform: translateY(4px);background: #048DEF;}
 
 /*mobileAppSection*/
-.mobileAppSection{background: url('../../../public/images/mobileAppSection/grubBack.png') no-repeat;background-size: 100%;padding: 100px 0px;}
+.mobileAppSection{background: url('../../../../public/images/mobileAppSection/grubBack.png') no-repeat;background-size: 100%;padding: 100px 0px;}
 .mobileAppSection .right{display: flex;justify-content: start;position: relative;width: 50%;}
 .mobileAppSection .left{width: 50%;color: #333333;}
 .mobileAppSection .right img{width: 368px;height: 563px;}
@@ -66,7 +66,7 @@ display: inline-block;margin-top: 25px;
     .mobileAppSection > div{flex-wrap: wrap;width: 95%;}
     .mobileAppSection .right .mobileImage{position: absolute;left: 23px;bottom: 26px;}
     .mobileAppSection{padding: 70px 0px;
-        background: url('../../../public/images/mobileAppSection/grubBack.png') repeat;
+        background: url('../../../../public/images/mobileAppSection/grubBack.png') repeat;
         background-size: auto;}
     .mobileAppSection .right img{width: 208px;height: 318px;}
     .mobileAppSection .right .mobileImage{position: absolute;left: 24%;bottom: 8%;}

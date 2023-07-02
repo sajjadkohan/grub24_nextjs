@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/largeComponents/Filter.module.css'
+import styles from '../../components/filter/Filter.module.css'
 
 const ByDelivery = () => {
   return (

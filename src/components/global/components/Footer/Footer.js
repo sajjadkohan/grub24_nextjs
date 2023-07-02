@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../../styles/largeComponents/Footer.module.css'
-import logoGrub from '../../images/434x0w.png';
-import appStore from '../../../public/images/mobileAppSection/logo_ios.png';
-import googlePlay from '../../../public/images/mobileAppSection/android-download.png';
+import styles from '../../components/Footer/Footer.module.css'
+import logoGrub from '../../../../images/434x0w.png';
+import appStore from '../../../../../public/images/mobileAppSection/logo_ios.png';
+import googlePlay from '../../../../../public/images/mobileAppSection/android-download.png';
 import Link from 'next/link';
 import Image from 'next/image';
 

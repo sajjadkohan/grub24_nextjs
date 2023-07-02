@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react'
-import styles from '../../styles/largeComponents/Header.module.css';
+import styles from '../../../global/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../images/434x0w.png';
+import logo from '../../../../images/434x0w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 // import { useNavigation } from 'next/navigation'
