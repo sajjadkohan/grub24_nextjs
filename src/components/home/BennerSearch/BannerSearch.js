@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../BennerSearch/BannerSearch.module.css';
-import ParallaxImg from '../../smallComponents/ParallaxImg';
+import ParallaxImg from '../ParallaxImg/ParallaxImg';
 import SearchAddress from '../SearchAddress/SearchAddress';
 import Link from 'next/link';
 

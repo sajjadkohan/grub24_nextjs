@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
-import styles from '../../styles/smallComponents/ParallaxImg.module.css';
-import image1 from '../../images/backForHome.webp'
+import styles from '../ParallaxImg/ParallaxImg.module.css';
+import image1 from '@/images/backForHome.webp'
 import { Parallax, Background } from "react-parallax";
 const insideStyles = {
   background: "white",

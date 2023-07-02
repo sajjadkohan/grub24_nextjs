@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 // components
 import BannerSearch from '@/components/home/BennerSearch/BannerSearch';
-import SwiperSlider from '@/components/largeComponents/SwiperSlider';
+import SwiperSlider from '@/components/global/components/SwiperSlider/SwiperSlider';
 
 // image
 import slide1 from '../images/swiper/1.webp';
@@ -25,13 +25,13 @@ import cuisineImage9 from '../../public/images/cuisine/a9.png';
 import cuisineImage10 from '../../public/images/cuisine/a10.png';
 import cuisineImage11 from '../../public/images/cuisine/a11.png';
 
-import SwiperSliderLong from '@/components/largeComponents/SwiperSliderLong';
+import SwiperSliderLong from '@/components/home/SwiperSliderLong/SwiperSliderLong';
 import AbsoluteSection from '@/components/home/AbsoluteSection/AbsoluteSection';
 import CuisineSwiper from '../components/home/CuisineSwiper/CuisineSwiper';
-import MobileAppSection from '@/components/largeComponents/MobileAppSection';
-import SwiperCities from '@/components/largeComponents/SwiperCities';
-import MoreInfo from '@/components/largeComponents/MoreInfo';
-import SubsCribe from '@/components/largeComponents/SubsCribe';
+import MobileAppSection from '@/components/home/MobileAppSection/MobileAppSection';
+import SwiperCities from '@/components/global/components/SwiperCities/SwiperCities';
+import MoreInfo from '@/components/home/MoreInfo/MoreInfo';
+import SubsCribe from '@/components/global/components/SubsCribe/SubsCribe';
 
 const dataSwiper = [
   {

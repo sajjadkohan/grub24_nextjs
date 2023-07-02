@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
-import styles from '../global/GlobalSwiper.module.css';
+import styles from '../../GlobalSwiper.module.css';
 
 
 // import "./styles.css";
@@ -42,8 +42,8 @@ export default function SwiperSlider({data}) {
                     <div className="swiper-scrollbar1"></div>
                 </div>
                 <div className={styles.navigation+' '+'dFlex algCenter jstBtn'}>
-                    <button className="prev"><FontAwesomeIcon icon={faChevronLeft} /></button>
-                    <button className="next"><FontAwesomeIcon icon={faChevronRight} /></button>
+                    <button className="prev1"><FontAwesomeIcon icon={faChevronLeft} /></button>
+                    <button className="next1"><FontAwesomeIcon icon={faChevronRight} /></button>
                 </div>
             </div>
         </div>
@@ -56,8 +56,8 @@ export default function SwiperSlider({data}) {
         draggable: true,
         }}
         navigation={{
-            prevEl: '.prev',
-            nextEl: '.next',
+            prevEl: '.prev1',
+            nextEl: '.next1',
           }}
            
         modules={[Scrollbar,Navigation]}

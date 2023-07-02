@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState } from 'react'
-import styles from '../../styles/largeComponents/MoreInfo.module.css';
+import styles from '../MoreInfo/MoreInfo.module.css';
 import Link from 'next/link';
 
 const MoreInfo = () => {

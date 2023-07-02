@@ -1,20 +1,20 @@
 'use client';
 import React, { useState } from 'react'
-import TopMap from '../smallComponents/TopMap'
-import CuisineSwiperTop from '../smallComponents/CuisineSwiperTop'
+import TopMap from '../TopMap/TopMap'
+import CuisineSwiperTop from '../CuisineSwiperTop/CuisineSwiperTop'
 // images
-import cuisineImage from '../../../public/images/cuisine/a1.webp';
-import cuisineImage2 from '../../../public/images/cuisine/a2.webp';
-import cuisineImage3 from '../../../public/images/cuisine/a3.webp';
-import cuisineImage4 from '../../../public/images/cuisine/a4.png';
-import cuisineImage5 from '../../../public/images/cuisine/a5.webp';
-import cuisineImage6 from '../../../public/images/cuisine/a6.png';
-import cuisineImage7 from '../../../public/images/cuisine/a7.png';
-import cuisineImage8 from '../../../public/images/cuisine/a8.png';
-import cuisineImage9 from '../../../public/images/cuisine/a9.png';
-import cuisineImage10 from '../../../public/images/cuisine/a10.png';
-import cuisineImage11 from '../../../public/images/cuisine/a11.png';
-import styles from '../../styles/largeComponents/TopSectionBrowse.module.css';
+import cuisineImage from '@/../public/images/cuisine/a1.webp';
+import cuisineImage2 from '@/../public/images/cuisine/a2.webp';
+import cuisineImage3 from '@/../public/images/cuisine/a3.webp';
+import cuisineImage4 from '@/../public/images/cuisine/a4.png';
+import cuisineImage5 from '@/../public/images/cuisine/a5.webp';
+import cuisineImage6 from '@/../public/images/cuisine/a6.png';
+import cuisineImage7 from '@/../public/images/cuisine/a7.png';
+import cuisineImage8 from '@/../public/images/cuisine/a8.png';
+import cuisineImage9 from '@/../public/images/cuisine/a9.png';
+import cuisineImage10 from '@/../public/images/cuisine/a10.png';
+import cuisineImage11 from '@/../public/images/cuisine/a11.png';
+import styles from '../TopSectionBrowse.module.css';
 
 const dataSwiperCuisine2 = [
     {

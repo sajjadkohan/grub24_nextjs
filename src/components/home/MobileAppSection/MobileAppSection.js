@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from '../home/AbsoluteSection/AbsoluteSection.module.css';
+import styles from '../AbsoluteSection/AbsoluteSection.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import mobile1 from '../../../public/images/mobileAppSection/mobhome1.webp';
-import mobile2 from '../../../public/images/mobileAppSection/mobhome2.webp';
-import qrCode from '../../../public/images/mobileAppSection/qr_grub.png';
-import appStore from '../../../public/images/mobileAppSection/logo_ios.png';
-import googlePlay from '../../../public/images/mobileAppSection/android-download.png';
+import mobile1 from '../../../../public/images/mobileAppSection/mobhome1.webp';
+import mobile2 from '../../../../public/images/mobileAppSection/mobhome2.webp';
+import qrCode from '../../../../public/images/mobileAppSection/qr_grub.png';
+import appStore from '../../../../public/images/mobileAppSection/logo_ios.png';
+import googlePlay from '../../../../public/images/mobileAppSection/android-download.png';
 
 const MobileAppSection = () => {
   return (

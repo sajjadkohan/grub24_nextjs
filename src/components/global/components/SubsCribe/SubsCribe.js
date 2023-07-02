@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/largeComponents/SubsCribe.module.css';
+import styles from '../SubsCribe/SubsCribe.module.css';
 
 
 const SubsCribe = () => {

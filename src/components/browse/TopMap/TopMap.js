@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../styles/largeComponents/TopSectionBrowse.module.css'
+import styles from '../TopSectionBrowse.module.css';
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 const TopMap = ({showMap}) => {
