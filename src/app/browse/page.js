@@ -6,6 +6,8 @@ import GrubSwiper from '@/components/browse/GrubSwiper/GrubSwiper';
 import banner1 from '../../../public/images/grubSwiper/banner1.jpeg';
 import banner2 from '../../../public/images/grubSwiper/banner2.webp';
 import banner3 from '../../../public/images/grubSwiper/banner3.webp';
+import ListMerchant from '@/components/browse/listMerchant/ListMerchant';
+import {dataForSwiper} from '@/../utils/constanst';
 
 const grubSwiperData= [
   {
@@ -36,7 +38,7 @@ const browsePage = () => {
 
         <div className={styles.body}>
         <GrubSwiper data={grubSwiperData}/>
-        ssadf
+        <ListMerchant data={dataForSwiper} />
         </div>
 
         
