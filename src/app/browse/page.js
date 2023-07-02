@@ -36,6 +36,10 @@ const browsePage = () => {
         <div className={styles.right}>
           <GrubSwiper data={grubSwiperData}/>
         </div>
+<<<<<<< HEAD
+=======
+        sdsfsdf
+>>>>>>> 9a3a88ea3e45f8a05fd406b6231737ab5576b813
       </div>
       
     </div>
