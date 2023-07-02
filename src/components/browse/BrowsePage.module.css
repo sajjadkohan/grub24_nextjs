@@ -1,3 +1,5 @@
-.browsePage .left {width: 15%;}
-.browsePage .right {width: 85%;}
-.browsePage .content{flex-wrap: wrap;}
+.browsePage .filter {width: 15%;}
+.browsePage .body {width: 85%;}
+.browsePage .content{}
+
+

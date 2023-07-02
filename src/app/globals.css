@@ -109,6 +109,7 @@ a {
 .algCenter{align-items: center;}
 .jstBtn{justify-content: space-between;}
 .jstCnr{justify-content: center;}
+.flexWrap{flex-wrap: wrap;}
 .dNone{display: none!important;}
 .dInlineBlk{display: inline-block;}
 .dBlock{display: block;}

@@ -29,13 +29,17 @@ const browsePage = () => {
   return (
     <div className={styles.browsePage}>
       <TopSectionBrowse/>
-      <div className={styles.content+' '+'containerFluid90 dFlex'}>
-        <div className={styles.left}>
+      <div className={styles.content+' '+'containerFluid90 dFlex flexWrap'}>
+        <div className={styles.filter}>
         <FilterComponent/>
         </div>
-        <div className={styles.right}>
-          <GrubSwiper data={grubSwiperData}/>
-        </div>sdsfsdf 9a3a88ea3e45f8a05fd406b6231737ab5576b813
+
+        <div className={styles.body}>
+        <GrubSwiper data={grubSwiperData}/>
+        ssadf
+        </div>
+
+        
       </div>
 
     </div>
