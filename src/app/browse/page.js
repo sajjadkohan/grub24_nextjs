@@ -36,7 +36,7 @@ const browsePage = () => {
         <div className={styles.right}>
           <GrubSwiper data={grubSwiperData}/>
         </div>
-        s
+        sdsfsdf
       </div>
     </div>
   )
