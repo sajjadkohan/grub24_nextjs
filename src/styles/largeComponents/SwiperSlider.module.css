@@ -181,13 +181,6 @@ top: 45%;
 .cuisineSwiper .imageParent{padding: 0px;}
 .cuisineSwiper .cuis{color: #AAAAAA;}
 
-/*siperCities*/
-.swiperCities .mySwiper{padding-left: 0px!important;padding-right: 0px!important;}
-.swiperCities .imageDiv{padding-top: 60%;}
-.swiperCities .imageSwiper{right: 0;left: inherit;}
-.swiperCities .head .desc{letter-spacing: 1px;font-size: 14px;line-height: 20px;color: #393636;margin-top: 10px;}
-.swiperCities .imageParent{padding: 0px;}
-.swiperCities .cuis{color: #AAAAAA;}
 
 /*cuisineTopsSwiper*/
 .cuisineSwiperTop{padding: 30px 10px;position: relative;z-index: 1;}
@@ -221,13 +214,68 @@ top: 45%;
 }
 .cuisineSwiperTop .head{position: absolute;left: -2%;top: -16%;width: 104.5%;}
 
+/*siperCities*/
+.swiperCities .mySwiper{padding-left: 0px!important;padding-right: 0px!important;}
+.swiperCities .imageDiv{padding-top: 60%;}
+.swiperCities .imageSwiper{right: 0;left: inherit;}
+.swiperCities .head .desc{letter-spacing: 1px;font-size: 14px;line-height: 20px;color: #393636;margin-top: 10px;}
+.swiperCities .imageParent{padding: 0px;}
+.swiperCities .cuis{color: #AAAAAA;}
+
+/*grubSwiper*/
+.grubSwiper .titleParent{position: absolute;top: 20px;padding-left: 20px;}
+.grubSwiper .descParent{position: absolute;top: 2px;height: 92%;padding-left: 20px;padding: 20px;}
+.grubSwiper .radMore{font-size: 16px;line-height: 23px;color: #fff;position: absolute;bottom: 0px;padding-left: 0px;text-shadow: 1px 1px 4px #0006;}
+.grubSwiper span{font-size: 16px;line-height: 23px;color: #fff;margin-top: 10px;text-shadow: 1px 1px 4px #0006;}
+.grubSwiper title{font-size: 21px;line-height: 23px;color: #fff!important;}
+.grubSwiper .cardItem{
+  padding: 0px !important;
+  background: none;
+  border-radius: 19px;
+  position: relative;
+  box-shadow: 17px 40px 30px #f2f2f2a3;
+  display: flex;flex-wrap: wrap;
+}
+.grubSwiper .titleParent .title{font-size: 24px;color:#fff;}
+.grubSwiper .imageDiv{padding-top: 50%!important;}
+.grubSwiper .imageSwiper{width: 100% !important;}
+.grubSwiper .head{position: absolute;left: 2.5%;top: 0%;width: 101%;}
+.grubSwiper .cardItem:hover .imageDiv {transform: none;}
+.grubSwiper .container{width: 100%;padding-left: 5%;}
+.grubSwiper .navigation button:disabled{color:#ccc}
+.grubSwiper .navigation button:disabled:hover{transform: none;color: #ccc;box-shadow: 0px 9px 23px #c8b8b86b;}
+.grubSwiper .navigation button:hover {
+  transform: translateY(3px);
+  color: #058ef0;
+  box-shadow: none;
+  
+}
 
 
+/*cuisineTopsSwiper*/
+.grubSwiperTop{padding: 30px 10px;position: relative;z-index: 1;}
+.shadowBottom{box-shadow: 0px 5px 10px #77777730;position: relative;z-index: 1;}
+.shadowTop{box-shadow: 0px -5px 10px #77777730;}
+.grubSwiper .topSwiper .imageDiv{padding-top: 70%;}
+.grubSwiper .navigation button{
+  transition: 0.5s all;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0px 9px 23px #c8b8b86b;
+  margin: 0 7px;
+  font-size: 14px;
+  border: none;
+  position: relative;
+  z-index: 3;
+}
 
-
-
-
-
+.cuisineSwiperTop .head{position: absolute;left: -2%;top: -16%;width: 104.5%;}
 
 
 

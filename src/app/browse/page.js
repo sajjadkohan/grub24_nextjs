@@ -9,7 +9,7 @@ import banner3 from '../../../public/images/grubSwiper/banner3.webp';
 
 const grubSwiperData= [
   {
-    title :  "Get up to 30% Discount",
+    title :  `Get up to 30% Discount`,
     desc : ' Exclusive to Grub24',
     image : banner1
   },
@@ -36,6 +36,7 @@ const browsePage = () => {
         <div className={styles.right}>
           <GrubSwiper data={grubSwiperData}/>
         </div>
+        s
       </div>
     </div>
   )
