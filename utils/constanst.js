@@ -1,4 +1,4 @@
-const BASE_URL = 'HTTP';
+const BASE_URL = 'https://grub24.co.uk';
 
 import slide1 from '@/images/swiper/1.webp';
 import slide2 from '@/images/swiper/2.webp';
@@ -14,7 +14,8 @@ const dataForSwiper = [
       status : 'closed',
       freeDelivery : true,
       deliveryTime : '30 - 45 min',
-      image : slide1
+      image : 'https://grub24s3.s3.eu-west-2.amazonaws.com/upload/1603106362-3.webp',
+      discount : 10
     },
     {
       id: 'skfe34554ss',
@@ -24,7 +25,8 @@ const dataForSwiper = [
       status : 'open',
       freeDelivery : true,
       deliveryTime : '30 - 40 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     {
       id: 'skfe345we54',
@@ -34,7 +36,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide3
+      image : 'https://grub24s3.s3.eu-west-2.amazonaws.com/upload/1643540801-1615641583-slider-kebab.webp',
+      discount : 20
     },
     {
       id: 'skfe345xcgg54',
@@ -44,7 +47,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide4
+      image : slide4,
+      discount : 0
     },
     {
       id: 'skfesfv34554',
@@ -54,7 +58,8 @@ const dataForSwiper = [
       status : 'closed',
       freeDelivery : true,
       deliveryTime : '30 - 45 min',
-      image : slide6
+      image : slide6,
+      discount : 15
     },
     {
       id: 'skfe3452sdd54',
@@ -64,7 +69,8 @@ const dataForSwiper = [
       status : 'open',
       freeDelivery : true,
       deliveryTime : '30 - 40 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     {
       id: 'skfe3434554554',
@@ -74,7 +80,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide3
+      image : slide3,
+      discount : 0
     },
     {
       id: 'skfe3455wxxfvd4',
@@ -84,7 +91,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     {
       id: 'skfe3465554',
@@ -94,7 +102,8 @@ const dataForSwiper = [
       status : 'closed',
       freeDelivery : true,
       deliveryTime : '30 - 45 min',
-      image : slide1
+      image : slide1,
+      discount : 0
     },
     {
       id: 'skfe3454454ss',
@@ -104,7 +113,8 @@ const dataForSwiper = [
       status : 'open',
       freeDelivery : true,
       deliveryTime : '30 - 40 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     {
       id: 'skfe3455we54',
@@ -114,7 +124,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide3
+      image : slide3,
+      discount : 0
     },
     {
       id: 'skfe3345xcgg54',
@@ -124,7 +135,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide4
+      image : slide4,
+      discount : 0
     },
     {
       id: 'skfesf3v34554',
@@ -134,7 +146,8 @@ const dataForSwiper = [
       status : 'closed',
       freeDelivery : true,
       deliveryTime : '30 - 45 min',
-      image : slide6
+      image : slide6,
+      discount : 0
     },
     {
       id: 'skfe3452sd3d54',
@@ -144,7 +157,8 @@ const dataForSwiper = [
       status : 'open',
       freeDelivery : true,
       deliveryTime : '30 - 40 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     {
       id: 'skfe34345534554',
@@ -154,7 +168,8 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide3
+      image : slide3,
+      discount : 0
     },
     {
       id: 'skfe3455wxxf2vd4',
@@ -164,12 +179,13 @@ const dataForSwiper = [
       status : 'pre-order',
       freeDelivery : false,
       deliveryTime : '30 - 60 min',
-      image : slide2
+      image : slide2,
+      discount : 0
     },
     
 ];
 
 
-module.exports = {
+export{
     BASE_URL,dataForSwiper
 }

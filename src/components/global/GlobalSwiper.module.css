@@ -18,8 +18,9 @@
     background: #fff;
     border-radius: 19px;
     position: relative;
-    box-shadow: 17px 40px 30px #f2f2f2a3;
+    box-shadow: 17px 40px 24px #f2f2f2;
     display: flex;flex-wrap: wrap;
+    transition: 0.2s all;
 }
 .cardItem:hover .imageDiv {
     transform: scale(1.04);
@@ -62,17 +63,38 @@ text-transform: uppercase;
     z-index: 3;
     background: #0a99ff;
     position: absolute;
-    bottom: 39px;
+    bottom: 30px;
     padding: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 24px;
+    left: 20px;
     text-align: center;
     border-radius: 4px;
     color: #fff;
     font-size: 14px;
 }
+.itemMerchant .freDelivery{bottom: 20px;}
+.discount{position: absolute;
+  background: #0A99FF;
+  bottom: 17px;
+  right: 22px;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  border: 2px dashed;
+  transform: rotate(-26deg);
+  transition: 0.3s all;
+  width: 80px;
+  height: 80px;
+}
+.discount div{width: 100%;text-align: center;}
+.discount div:first-child{font-size: 19px;}
+.discount div:last-child{font-size: 12px;}
 .desc{direction: rtl;}
 .desc .first{width: 100%;display: flex;justify-content: space-between;align-items: center;direction: ltr;padding: 10px;}
 .desc .last{width: 100%;display: flex;justify-content: space-between;align-items: center;direction: ltr;padding: 10px;border-top: 4px dotted #f5f5f5;}
@@ -227,7 +249,7 @@ top: 45%;
 .grubSwiper .descParent{position: absolute;top: 2px;height: 92%;padding-left: 20px;padding: 20px;}
 .grubSwiper .radMore{font-size: 16px;line-height: 23px;color: #fff;position: absolute;bottom: 0px;padding-left: 0px;text-shadow: 1px 1px 4px #0006;}
 .grubSwiper span{font-size: 16px;line-height: 23px;color: #fff;margin-top: 10px;text-shadow: 1px 1px 4px #0006;}
-.grubSwiper title{font-size: 21px;line-height: 23px;color: #fff!important;}
+
 .grubSwiper .cardItem{
   padding: 0px !important;
   background: none;
@@ -235,11 +257,12 @@ top: 45%;
   position: relative;
   box-shadow: 17px 40px 30px #f2f2f2a3;
   display: flex;flex-wrap: wrap;
+
 }
-.grubSwiper .titleParent .title{font-size: 24px;color:#fff;}
+.grubSwiper .titleParent .title{font-size: 24px;color:#fff;text-shadow: 1px 1px 2px #0006;}
 .grubSwiper .imageDiv{padding-top: 50%!important;}
 .grubSwiper .imageSwiper{width: 100% !important;}
-.grubSwiper .head{position: absolute;left: 2.5%;top: 0%;width: 101%;}
+.grubSwiper .head{position: absolute;left: -2.5%;top: 0%;width: 106%;}
 .grubSwiper .cardItem:hover .imageDiv {transform: none;}
 .grubSwiper .container{width: 100%;}
 .grubSwiper .navigation button:disabled{color:#ccc}
@@ -277,10 +300,10 @@ top: 45%;
 
 .cuisineSwiperTop .head{position: absolute;left: -2%;top: -16%;width: 104.5%;}
 
-
-
-
-
-
+.itemMerchant .titleParent h1{font-size: 21px;min-height: 51px;}
+.itemMerchant .imageParent{padding: 0px 0px;position: relative;}
+.itemMerchant .cardItem:hover .imageDiv {transform: none;}
+.itemMerchant .cardItem:hover{transform: translateY(4px);}
+.itemMerchant .cardItem:hover .discount{transform: rotate(2deg);}
 
 

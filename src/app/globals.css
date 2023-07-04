@@ -308,6 +308,7 @@ a {
 
 .scrollBarC > .swiper-scrollbar3.swiper-scrollbar-horizontal {position: relative;height: 1px;background: #cecece;}
 
+.resultView{color: #aaaaaa!important;font-size: 18px;margin: 60px auto 0px 30px;}
 
 
 @media (prefers-color-scheme: dark) {
