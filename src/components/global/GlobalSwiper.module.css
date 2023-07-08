@@ -305,5 +305,7 @@ top: 45%;
 .itemMerchant .cardItem:hover .imageDiv {transform: none;}
 .itemMerchant .cardItem:hover{transform: translateY(4px);}
 .itemMerchant .cardItem:hover .discount{transform: rotate(2deg);}
-
-
+.itemMerchant .gradeParent{font-size: 11px;display: flex;}
+.itemMerchant .gradeParent .on{opacity: 1;margin-left: 2px;}
+.itemMerchant .gradeParent .off{opacity: 0.2;margin-left: 2px;}
+.tagContainer{margin-left: 10px;}
