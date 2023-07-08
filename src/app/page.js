@@ -32,6 +32,7 @@ import MobileAppSection from '@/components/home/MobileAppSection/MobileAppSectio
 import SwiperCities from '@/components/global/components/SwiperCities/SwiperCities';
 import MoreInfo from '@/components/home/MoreInfo/MoreInfo';
 import SubsCribe from '@/components/global/components/SubsCribe/SubsCribe';
+import LoginModal from '@/components/global/components/LoginModal/LoginModal';
 
 const dataSwiper = [
   {
@@ -269,6 +270,7 @@ const dataSwiperCuisine = [
 export default function Home() {
   return (
     <main className={styles.main}>
+      <LoginModal />
       <section>
         <BannerSearch/>
       </section>

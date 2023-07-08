@@ -1,0 +1,47 @@
+.contLoginModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000006b;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contLoginModal .childComp{
+    width: 26%;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 27px;
+    position: relative;
+    opacity: 1;
+    transition: 0.5s all;
+    padding: 22px 12px;
+}
+
+
+.childComp.openLogin{
+    opacity: 1;
+}
+
+.childComp header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.childComp header .cls{
+    background: #f3f3f3;
+    display: flex;
+    width: 37px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
