@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { BASE_URL } from '../../../../utils/constanst';
 import ListMerchant from './ListMerchant';

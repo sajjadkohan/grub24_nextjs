@@ -1,4 +1,9 @@
-.filter{margin-top: 40px;}
+.filter{margin-top: 40px;transition: 0.5s all;}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 .radioButton{
     margin-right: 10px;
     width: 24px;
@@ -34,3 +39,12 @@
 .row .text{font-size: 14px;color:#393639}
 .parent{border-bottom: 2px solid #ececec; padding-bottom: 11px;padding-top: 20px;}
 .byCuisiners .body{max-height: 320px;overflow: scroll;}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-bottom: 0px!important;
+  /* سایر استایل‌های مورد نیاز */
+}

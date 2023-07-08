@@ -1,16 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import pStyles from '../listMerchant/ListMerchantStyle.module.css'
 import styles from '../../global/GlobalSwiper.module.css'
 
 import Link from 'next/link'
 import Image from 'next/image'
 import { fixedNumber } from '../../../../utils/functions'
+import TagContainer from './TagContainer'
 
 const ItemMerchant = ({data}) => {
+
+    const[gradeState,setGradeState] = useState([]);
+
+    useEffect(()=> {
+        setGradeState([parseInt(data.grade)]);
+        console.log(typeof data.grade);
+    },[data])
+
   return (
-    <div className={pStyles.itemMerchant+' '+styles.itemMerchant}>
+    <div className={`${pStyles.itemMerchant} ${styles.itemMerchant}`}>
       
-                    <Link className="dBlock" href={'/'}>
+                    <Link className="dBlock" href={'/s'}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
                                 <div className={styles.imageDiv}>
@@ -62,7 +72,7 @@ const ItemMerchant = ({data}) => {
                                 </div>
                                 
                                 <div className={styles.last}>
-                                    <div className={styles.statusParent}>
+                                    <div className={styles.statusParent+' '+'dFlexPro'}>
                                     {
                                         data.openStatus==='Open' && <p className={styles.status+' '+styles.openStatus}>OPEN</p>
                                     }
@@ -72,8 +82,11 @@ const ItemMerchant = ({data}) => {
                                     {
                                         data.openStatus==='Pre-Order' && <p className={styles.status+' '+styles.preOrderStatus}>PRE-OPRDER</p>
                                     }
+                                    <div className={styles.gradeParent+' '+'dFlexPro'}>
+                                    <TagContainer num={gradeState} />
                                     </div>
-                                    <span className={styles.time}>{data.deliveryTime}</span>
+                                    </div>
+                                    <span className={styles.time+' '+'roboto400'}>{data.preparetime} mins</span>
                                 </div>
                             </div>
                         </div>

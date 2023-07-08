@@ -59,7 +59,6 @@ const ByCuisinesr = () => {
     <>
     <div className={styles.byCuisiners+' '+styles.parent}>
         <div className={styles.titleFilter+' '+'roboto700'}>By Cuisinesr</div>
-        <Scrollbar height={'12vw'}>
         <div className={styles.body}>
         {
             cuisinesr&& cuisinesr.map(item => {
@@ -72,12 +71,6 @@ const ByCuisinesr = () => {
             })
         }
         </div>
-        </Scrollbar>
-
-
-
-
-
     </div>
     </>
   )

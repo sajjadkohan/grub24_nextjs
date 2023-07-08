@@ -310,6 +310,23 @@ a {
 
 .resultView{color: #aaaaaa!important;font-size: 18px;margin: 60px auto 0px 30px;}
 
+.tag.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.tag {
+  position: sticky;
+  top: 0;
+}
+
+.tag.bottom {
+  position: absolute;
+  bottom: 0;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
