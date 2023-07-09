@@ -20,7 +20,7 @@ const ItemMerchant = ({data}) => {
   return (
     <div className={`${pStyles.itemMerchant} ${styles.itemMerchant}`}>
       
-                    <Link className="dBlock" href={'/s'}>
+                    <Link className="dBlock" href={`/store/${data.merchant_id}`}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
                                 <div className={styles.imageDiv}>
