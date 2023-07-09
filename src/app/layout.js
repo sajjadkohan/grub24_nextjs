@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header/>
           <ViewWrapper>
-            {children}
+            <Header/>
+                {children}
+            <Footer/>
           </ViewWrapper>
-        <Footer/>
         </body>
     </html>
   )

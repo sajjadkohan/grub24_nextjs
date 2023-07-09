@@ -12,6 +12,11 @@
     
 }
 
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .contLoginModal .childComp{
     width: 26%;
     min-height: 100px;
@@ -20,8 +25,22 @@
     position: relative;
     opacity: 1;
     transition: 0.5s all;
-    padding: 22px 12px;
+    padding: 0px 0px;
+    animation-name: example;
+    animation-duration: 1s;
 }
+
+.btMeta > span:first-child{
+    background: url(../../../../images/meta.png) center no-repeat;
+    width: 42px;
+    height: 39px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-size: 81%;
+}
+
+
 
 
 .childComp.openLogin{
@@ -31,7 +50,7 @@
 .childComp header {
     display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
+    flex-wrap: wrap;
 }
 
 .childComp header .cls{
@@ -44,4 +63,131 @@
     border-radius: 100px;
     transition: 0.5s all;
     cursor: pointer;
+    flex-wrap: wrap;
 }
+
+.grLogo{
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    box-shadow: 0 0 20px #3c3b3b42;
+    background: #fff url(../../../../images/434x0w.png) no-repeat center;
+      background-size: auto;
+    background-size: 57%;
+}
+
+.childComp h4{
+    font-family: Quicksand !important;
+    font-weight: bold !important;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 7px;
+}
+
+.childComp > div:first-child p {
+    font-family: Roboto !important;
+    font-weight: 300 !important;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.childComp > div:last-child p{
+    font-size: 12px;
+    margin-top: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.btGoogle{
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #000 !important;
+    background: #fff;
+    border-radius: 11px;
+    height: 50px;
+    position: relative;
+}
+
+.btGoogle:hover{
+    background: #e6e6e6!important;
+}
+
+.btGoogle > span:first-child{
+    position: absolute;
+    left: 9px;
+    display: block;
+    top: 6px;
+}
+
+.botComp{
+    background: #f8f8f8;
+    width: 100%;
+    margin-top: 46px;
+    padding: 30px 38px;
+    position: relative;
+    border-radius: 0px 0px 27px 27px;
+}
+
+.botComp > input{
+    padding: 17px 17px;
+    border: none;
+    background: #e8e8e8;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 0;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.el1{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 5px 26px #cccccc7a;
+    font-size: 14px;
+}
+
+.btEmail{
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background: #0a99ff !important;
+    color: #fff;
+    border: 1px solid #0a99ff !important;
+    border-radius: 11px;
+    height: 50px;
+    position: relative;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.btEmail:hover{
+    opacity: 1;
+}
+
+.btEmail > span:first-child{
+    position: absolute;
+    left: 9px;
+    display: block;
+    top: 13px;
+}
+

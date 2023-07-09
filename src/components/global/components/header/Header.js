@@ -1,11 +1,12 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import styles from '../../../global/Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../../../images/434x0w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { ViewContext } from '@/context/ViewContext';
 // import { useNavigation } from 'next/navigation'
 const Header = () => {
 
@@ -13,6 +14,7 @@ const Header = () => {
     const itemMenu = useRef(null);
     // const navigation = useNavigation();
     const [activeItem, setActiveItem] = useState(NaN);
+    const { setLoginModal } = useContext(ViewContext);
 
     useEffect(() => {
       const currentPath = window.location.pathname;
@@ -69,7 +71,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className={styles.loginSign+' '+'dFlex algCenter noneXs'}>
-                    <button className={'btnStyle btnNoneStyle'}>login</button>
+                    <button onClick={() => setLoginModal(true)} className={'btnStyle btnNoneStyle'}>login</button>
                     <button className={'btnStyle'+' '+styles.singBtn}>sign Up</button>
                 </div>
             </div>
