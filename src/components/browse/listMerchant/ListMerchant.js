@@ -18,7 +18,7 @@ const ListMerchant = ({data}) => {
     <>
       <div className='resultView roboto500'>{data.result[0].total}  results found</div>
     <div className='dFlexProMax flexWrap'>
-        {listStateMt.length&&listStateMt.map(item => <ItemMerchant cuisine={data.result[0].quis} key={item.merchant_id} data={item} />)}
+        {listStateMt.length&&listStateMt.map(item => <ItemMerchant cuisine={data.result[0].cuis} key={item.merchant_id} data={item} />)}
     </div>
     </>
   )

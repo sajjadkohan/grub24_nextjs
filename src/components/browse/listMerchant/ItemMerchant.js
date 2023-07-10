@@ -8,13 +8,16 @@ import Image from 'next/image'
 import { fixedNumber } from '../../../../utils/functions'
 import TagContainer from './TagContainer'
 
-const ItemMerchant = ({data}) => {
+const ItemMerchant = ({data ,cuisine}) => {
 
     const[gradeState,setGradeState] = useState([]);
+    const[discountState,setDiscountState] = useState('');
+    
 
     useEffect(()=> {
         setGradeState([parseInt(data.grade)]);
-        console.log(typeof data.grade);
+        // console.log(cuisine);
+        setDiscountState(data.offer)
     },[data])
 
   return (
@@ -38,9 +41,8 @@ const ItemMerchant = ({data}) => {
                                 <div className={data.free_delivery==='2'?styles.freDelivery+' '+'roboto500': 'dNone'}>
                                     free Delivery
                                 </div>
-                                <div className={data.discount?styles.discount+' '+'roboto500': 'dNone'}>
-                                    <div className='roboto500'>{data.discount}%</div>
-                                    <div className='roboto300'>off</div>
+                                <div className={data.offer?styles.discount+' '+'roboto500': 'dNone'}>
+                                    <div className='roboto500' dangerouslySetInnerHTML={{ __html: data.offer }} />
                                 </div>
                             </div>
 
@@ -60,14 +62,14 @@ const ItemMerchant = ({data}) => {
                                 <div className={styles.first}>
 
                                     <div className={styles.cuisine+' '+'w100 dFlex'}>
-                                        {/* {
-                                           data.cuisine&& data.cuisine.map(cuis => {
+                                        {
+                                           data.cuisine&& JSON.parse(data.cuisine).slice(0, 3).map(cuis => {
                                                 return(
-                                                    <span key={cuis} className={styles.cuis+' '+'roboto400'}>{cuis}</span>
+                                                    <span key={cuis} className={styles.cuis+' '+'roboto400'}>{cuisine[cuis]}</span>
 
                                                 )
                                             })
-                                        } */}
+                                        }
                                     </div>
                                 </div>
                                 
