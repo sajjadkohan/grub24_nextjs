@@ -1,0 +1,222 @@
+.contTop{
+    padding: 20px 50px;
+    background: linear-gradient(90deg, rgba(123,200,255,1) 0%, rgba(5,142,240,1) 100%);
+    border-radius: 21px;
+    margin-top: 15px;
+}
+
+.contTop h5{
+    line-height: 52px;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.p1{
+    color: #fff;
+    font-family: roboto;
+    font-weight: 500;
+    margin-bottom: 14px;
+    margin-top: 27px;
+}
+
+.bt1{
+    display: block;
+    color: #fff;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border: none;
+    background: #393636;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 30px #18181869;
+}
+
+.s1{
+    font-size: 30px;
+    display: block;
+    color: #fff;
+    margin-top: 64px;
+    font-weight: 400;
+    font-family: roboto;
+}
+
+.s2{
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-family: roboto;
+    margin-top: 8px;
+}
+
+.igg{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    position: relative;
+}
+
+.imgCont{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+      background-size: auto;
+    background-size: 100% 100% !important;
+    position: relative;
+}
+
+.igg .imgCont:nth-child(2){left: -30px;}
+.igg .imgCont:nth-child(3){left: -60px;}
+.igg .imgCont:nth-child(4){left: -90px;}
+.igg .imgCont:nth-child(5){left: -120px;}
+
+.contTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contTop > div{
+    width: 50%;
+}
+
+.contTop > div:last-child{
+    height: 503px;
+    background: url(https://grub24.co.uk/assets/images/careers/sub.png) center no-repeat;
+    position: relative;
+}
+
+.contTop > div:last-child::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url("https://grub24.co.uk/assets/images/careers/bef1.png") no-repeat center;
+      background-size: auto;
+    background-size: 70%;
+    top: 34%;
+    left: 6%;
+    position: absolute;
+}
+
+
+.contTop > div:last-child::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url("https://grub24.co.uk/assets/images/careers/bef2.png") no-repeat center;
+      background-size: auto;
+    background-size: 63%;
+    top: 17%;
+    right: 13%;
+    position: absolute;
+    box-shadow: -13px 17px 37px #00000078;
+}
+
+
+
+.imgRight{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgRight >  img{
+    position: absolute;
+height: 110%!important;
+width: 72% !important;
+left: 31px !important;
+top: 7px!important;
+right: 0;
+bottom: 0;
+color: transparent;
+}
+
+.igg::before{
+    width: 185px;
+    height: 135px;
+    content: "";
+    position: absolute;
+    left: 34%;
+    top: -32px;
+    background: url("https://grub24.co.uk/assets/images/careers/fla.png");
+    background-size: 100% 100% !important;
+}
+
+.contBottom > h2{
+    font-family: roboto;
+    margin-top: 59px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.contBottom{
+    position: relative;
+}
+
+.contBottom::after{
+    content: "";
+    width: 280px;
+    height: 185px;
+    background: url("https://grub24.co.uk/assets/images/careers/rg.png") center no-repeat;
+      background-size: auto;
+    background-size: 100%;
+    position: absolute;
+    right: -17%;
+    top: 173px;
+}
+
+.contBottom > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conIt{
+    padding: 45px 34px;
+    border-radius: 23px;
+    border: 2px solid #F3F3F3;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 5;
+    background: #fff;
+    width: 30%;
+}
+
+.conIt > span{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 59px;
+    height: 59px;
+    border-radius: 14px;
+    background: #F3F3F3;
+}
+
+.conIt > h4{
+    margin-top: 47px;
+    font-size: 21px;
+    font-family: roboto;
+}
+
+.conIt > p {
+    font-family: roboto !important;
+    font-weight: 400 !important;
+    line-height: 27px;
+    margin-top: 11px;
+}

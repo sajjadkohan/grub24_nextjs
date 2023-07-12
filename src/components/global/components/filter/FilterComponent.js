@@ -6,7 +6,7 @@ import ViewFilter from './ViewFilter';
 import ByDelivery from './ByDelivery';
 import ByCuisinesr from './ByCuisinesr';
 import MinimumDelivery from './MinimumDelivery';
-import StickyBox from 'react-sticky-box';
+// import StickyBox from 'react-sticky-box';
 
 
 const FilterComponent = () => {

@@ -334,6 +334,11 @@ a {
   bottom: 0;
 }
 
+.container{
+  width: 77%;
+  margin: auto;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
