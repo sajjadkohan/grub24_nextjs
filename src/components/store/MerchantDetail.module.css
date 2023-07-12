@@ -1,0 +1,85 @@
+.margin30_0{margin: 25px 0px;}
+
+/* merchantDetail */
+.merchantDetail{padding-top: 20px;}
+
+/* head */
+.head .left{width: 72%;}
+.head .right{width: 28%;}
+.head .right .backImg{width: 100%;border-radius: 12px;height: auto;min-width: 100%;min-height: 100%;max-width: 100%;max-height: 100%;}
+.head .left .statusTag{
+    padding: 6px 10px !important;
+    margin-right: 8px !important;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 1px;
+    margin-left: 6px;
+}
+.head .left .statusTag.close{background: #c81401;color: white;}
+.head .left .statusTag.open{background: #01c805;color: white;}
+.head .left .statusTag.preOrder{background: #01c805;color: white;}
+.head .left .time{font-size: 14px;color: #393636;}
+/* .head .left .statusParent{margin: 30px 0px;} */
+
+/*broadCrump*/
+.broadCrump{width: 100%;align-items: center;}
+.broadCrump .icon{margin: 0px 10px;}
+.broadCrump a{font-size: 14px;color: #058EF0;cursor: pointer;}
+.broadCrump .name{font-size: 12px;color: #393636;}
+
+
+/*nameDisplay*/
+.nameDisplay{position: relative;}
+/* .nameDisplay .cuisineParent{margin-top: 3px;} */
+.nameDisplay .cuis{font-size: 14px;position: relative;margin-right: 13px;text-transform: capitalize;color: #434343;}
+.nameDisplay .cuis::after {
+    content: ".";
+    position: absolute;
+    right: -11px;
+    font-size: 33px;
+    top: -20px;
+    color: #c7c4c4;
+}
+.nameDisplay .cuis:last-child::after{display: none;}
+.nameDisplay .name{font-size: 37px;color: #333333;}
+
+/*rateDisplay*/
+.rateDisplay .gifParent{
+    width: 60px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+}
+.rateDisplay .gif{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1.5);
+    max-width: 200%;
+    width: 100%;
+    z-index: -1;
+}
+.rateDisplay .rateValue{font-size: 25px;color: #333333;}
+.rateDisplay .text{font-size: 13px;color: #393636;}
+.favButton.active .text{color: #fff;}
+
+.rateDisplay .favButton{
+    padding: 5px 9px;
+    border-radius: 9px;
+    border: 1px solid #39363645;
+    cursor: pointer;
+    background: none;
+    transition: 0.4s all;
+}
+
+.favButton.active{background: #393636;color: #fff!important;}
+.favButton.active path{fill: gold;}
+
+
+/*tabTitle*/
+.tabTitle{font-size: 14px;}
+

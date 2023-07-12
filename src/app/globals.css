@@ -109,7 +109,7 @@ a {
 .dFlex{display: flex;}
 .dFlexPro{display: flex;align-items: center;}
 .dFlexProMax{display: flex;align-items: center;justify-content: space-between;}
-.algCenter{align-items: center;}
+.algCenter{align-items: center;display: flex;}
 .jstBtn{justify-content: space-between;}
 .jstCnr{justify-content: center;}
 .flexWrap{flex-wrap: wrap;}
@@ -129,6 +129,7 @@ a {
 }
 
 .inputC:focus{outline: none;}
+.container{max-width: 1200px;margin: auto;}
 .containerFliuid80{width: 80%;margin: auto;}
 .containerFluid90{width: 90%;margin: auto;}
 .containerFluid90L{width: 90%;margin: auto 0 auto auto;}
@@ -163,6 +164,8 @@ a {
 
 /*margin*/
 .mt40{margin-top: 40px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
 
 /*margin*/
 /*__________________________________________*/

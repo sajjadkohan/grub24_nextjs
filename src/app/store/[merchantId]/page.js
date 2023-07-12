@@ -1,8 +1,14 @@
 import React from 'react'
+import styles from '../../../components/store/MerchantDetail.module.css';
+import Head from '@/components/store/Head/Head';
 
 const MerchantDetail= () => {
   return (
-    <div>page</div>
+    <div className={styles.merchantDetail}>
+      <div className='container'>
+        <Head />
+      </div>
+    </div>
   )
 }
 
