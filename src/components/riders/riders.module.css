@@ -138,8 +138,8 @@
 .imgRight >  img{
     position: absolute;
 height: 110%!important;
-width: 77%!important;
-left: 31px;
+width: 72% !important;
+left: 31px !important;
 top: 7px!important;
 right: 0;
 bottom: 0;
@@ -162,6 +162,22 @@ color: transparent;
     margin-top: 59px;
     margin-bottom: 20px;
     font-size: 32px;
+}
+
+.contBottom{
+    position: relative;
+}
+
+.contBottom::after{
+    content: "";
+    width: 280px;
+    height: 185px;
+    background: url("https://grub24.co.uk/assets/images/careers/rg.png") center no-repeat;
+      background-size: auto;
+    background-size: 100%;
+    position: absolute;
+    right: -17%;
+    top: 173px;
 }
 
 .contBottom > div{
