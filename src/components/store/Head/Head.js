@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import styles from '@/components/store/MerchantDetail.module.css'
 import BroadCromp from '../BroadCrumb/BroadCromp'
 import Image from 'next/image'
@@ -6,7 +7,10 @@ import NameDisplay from '../NameDisplay/NameDisplay'
 import RateDisplay from '../RateDisplay/RateDisplay'
 import TabComponent from '../TabComponent/TabComponent'
 
-const Head = () => {
+const Head = ({data}) => {
+  useEffect(() => {
+  // console.log(data);
+  }, [])
   return (
     <div className={styles.head+' '+'dFlex flexWrap'}>
         <div className={styles.left}>
@@ -19,7 +23,7 @@ const Head = () => {
             </div>
             <NameDisplay nameMerchant={'frendzo peri peri'} cuisine={['kebab','burger','pizza']} />
             <RateDisplay/>
-            <TabComponent />
+            
         </div>
 
         <div className={styles.right}>

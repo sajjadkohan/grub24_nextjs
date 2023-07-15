@@ -6,7 +6,7 @@
 /* head */
 .head .left{width: 72%;}
 .head .right{width: 28%;}
-.head .right .backImg{width: 100%;border-radius: 12px;height: auto;min-width: 100%;min-height: 100%;max-width: 100%;max-height: 100%;}
+.head .right .backImg{width: 100%;border-radius: 12px;height: auto;min-width: 100%;max-width: 100%;max-height: 100%;}
 .head .left .statusTag{
     padding: 6px 10px !important;
     margin-right: 8px !important;
@@ -79,7 +79,142 @@
 .favButton.active{background: #393636;color: #fff!important;}
 .favButton.active path{fill: gold;}
 
+@keyframes anim {
+    0%{transform: scale(1);-webkit-transform: scale(1);}
+    50%{transform: scale(1.5);-webkit-transform: scale(1.7);}
+    0%{transform: scale(1);-webkit-transform: scale(1);}
 
-/*tabTitle*/
-.tabTitle{font-size: 14px;}
+}
+
+.favButton:hover svg{animation: anim 0.3s 0s linear;}
+
+/*tabComponent*/
+.tabComponent{margin-right: 60px;border-top: 1px solid #ccc;margin-top: 40px;}
+.tabComponent .tabTitle{font-size: 14px;color: #393636;}
+.tabComponent .tabTitle .badge{
+    padding: 2px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F3F3;
+    border-radius: 100%;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/*menuComponent*/
+.menuComponent .categoryFood{width: 20%;}
+.menuComponent .foodItemParent{width: 80%;}
+.menuComponent .categoryLink{width: 100%;display: block;padding: 8px 0px;transition: 0.3s all;position: relative;}
+.menuComponent .categoryLink::before{content:'';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: -20px;
+    background: #333333;
+    top: 17px;
+    transition: 0.3s all;
+}
+.menuComponent .categoryLink:hover{transform: scale(1.05);color: #058ef0;}
+.menuComponent .categoryLink:hover.categoryLink::before{width: 8px;}
+.menuComponent .categoryTitle{font-size: 18px;color: #333333;}
+.itemFood .card{background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+    padding-left: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 17px #ecebeb;
+    padding-left: 25px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 48%;
+    padding-bottom: 21px;
+    cursor: pointer;
+    transition: 0.3s all;
+    transform: translateY(0%);width: 48%;}
+.itemFood .card .titleCard{font-size: 16px;}
+.itemFood .card:hover{transform: translateY(4px);}
+.itemFood .card p{font-size: 14px;color: #AAAAAA;margin: 10px 0px;}
+.itemFood .card .left{width: 40%;}
+.itemFood .card .right{width: 60%;display: flex;justify-content: end;align-items: center;}
+.itemFood .card .price{font-size: 14px;color: #058EF0;margin-right: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

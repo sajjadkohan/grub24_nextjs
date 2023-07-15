@@ -23,6 +23,7 @@
     "react-measure": "^2.5.2",
     "react-parallax": "^3.5.1",
     "react-rotating-text": "^1.4.1",
+    "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.4.2",
     "react-scrollbars-custom": "^4.1.1",
     "react-sticky": "^6.0.3",

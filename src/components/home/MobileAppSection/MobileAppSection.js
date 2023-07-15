@@ -25,7 +25,7 @@ const MobileAppSection = () => {
 
                 <div className='w-100'>
                     <div className={styles.qrCode}>
-                        <Image width={500} height={500} src={qrCode} />
+                        <Image alt='qr code' width={500} height={500} src={qrCode} />
                     </div>
                 </div>
 

@@ -17,13 +17,14 @@ const ItemMerchant = ({data ,cuisine}) => {
     useEffect(()=> {
         setGradeState([parseInt(data.grade)]);
         // console.log(cuisine);
+        console.log(data);
         setDiscountState(data.offer)
     },[data])
 
   return (
     <div className={`${pStyles.itemMerchant} ${styles.itemMerchant}`}>
       
-                    <Link className="dBlock" href={`/store/${data.merchant_id}`}>
+                    <Link className="dBlock" href={`/store/${data.restaurant_slug}`}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
                                 <div className={styles.imageDiv}>

@@ -5,7 +5,7 @@ import ListMerchant from './ListMerchant';
 
 const GetMerchants = async () => {
 
-    const res = await fetch(`${BASE_URL}/NextApi/BrowsItems?page=2`,{
+    const res = await fetch(`${BASE_URL}/NextApi/BrowsItems?page=1`,{
         method : 'GET',
         cache : 'no-store'
        })

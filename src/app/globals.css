@@ -145,7 +145,7 @@ a {
   color: #878080;
 }
 .grubInput:focus{outline: none;}
-.w100{width: 100%;}
+.w100{width: 100%!important;}
 .poRelative{position: relative;}
 /*tags*/
 /*__________________________________________*/
@@ -338,6 +338,14 @@ a {
   width: 77%;
   margin: auto;
 }
+
+.container1170{
+  width: 1170px;
+  margin: auto;
+}
+
+.tabComponent .ant-tabs-tab-active span{color: #058ef0;}
+.tabComponent .ant-tabs-top > .ant-tabs-nav::before, :where(.css-dev-only-do-not-override-14wwjjs).ant-tabs-top > div > .ant-tabs-nav::before {border: none;}
 
 @media (prefers-color-scheme: dark) {
   html {

@@ -20,17 +20,17 @@ const Footer = () => {
              restaurants and hundreds of stores in multiple cities. Discover and 
             </p>
             <Link href={'/'} className={styles.btnDownload}>
-                <Image width={200} height={100} src={appStore} />
+                <Image alt='logo appstore' width={200} height={100} src={appStore} />
             </Link>
             <Link href={'/'} className={styles.btnDownload}>
-                <Image width={200} height={100} src={googlePlay} />
+                <Image alt='logo google play' width={200} height={100} src={googlePlay} />
             </Link>
           </div>
           <div className='col3 colxs12 noneXs'>
             <h5 className='roboto500'>Let’s do this together</h5>
             <ul className='roboto400'>
               <li>
-              <Link href={'/'}> For Riders</Link>
+              <Link href={'/riders'}> For Riders</Link>
               </li>
               <li>
               <Link href={'/'}> For Restaurants</Link>
@@ -92,7 +92,7 @@ const Footer = () => {
         <div className={styles.bottomDiv}>
           <div className={styles.left +' '+'dFlexPro'}>
             <span className={styles.icon}>
-              <Image className={styles.logoGrub} width={300} height={300} src={logoGrub}/>
+              <Image alt='grub24 logo' className={styles.logoGrub} width={300} height={300} src={logoGrub}/>
             </span>
             <span className={styles.text+' '+'roboto400'}>©️ Grub24 2018–2023</span>
 
