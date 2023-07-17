@@ -30,14 +30,6 @@ const ListMerchant = ({  }) => {
     }
   };
 
-  useEffect(() => {
-    fetchItems();
-  }, []);
-
-
-  const {setNumberPageFn,dataMerchantState,setDataMerchantStsteFn,merchantList,setMerchantListFn} = useContext(MerchantCtx);
-
-
   const getData = async () => {
     await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}`)
     .then(res => {
@@ -45,16 +37,19 @@ const ListMerchant = ({  }) => {
       setMerchantListFn(res.data.result[0].list);
       setDataMerchantStsteFn(res.data.result[0].cuis);
       setTotal(res.data.result[0].total)
-      // console.log();
+      console.log(res.data.result[0].total);
     })
     .catch(err => console.log(err))
   }
 
+
   useEffect(() => {
     getData();
+    fetchItems();
   }, []);
 
 
+  const {setNumberPageFn,dataMerchantState,setDataMerchantStsteFn,merchantList,setMerchantListFn} = useContext(MerchantCtx);
 
   return (
     <>

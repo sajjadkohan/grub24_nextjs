@@ -63,14 +63,14 @@ const ItemMerchant = ({data ,cuisine}) => {
                                 <div className={styles.first}>
 
                                     <div className={styles.cuisine+' '+'w100 dFlex'}>
-                                        {/* {
+                                        {
                                            data.cuisine&& JSON.parse(data.cuisine).slice(0, 3).map(cuis => {
                                                 return(
                                                     <span key={cuis} className={styles.cuis+' '+'roboto400'}>{cuisine[cuis]}</span>
 
                                                 )
                                             })
-                                        }  */}
+                                        } 
                                     </div>
                                 </div>
                                 
