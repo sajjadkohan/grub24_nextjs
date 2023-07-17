@@ -14,20 +14,20 @@ const Head = ({data}) => {
   return (
     <div className={styles.head+' '+'dFlex flexWrap'}>
         <div className={styles.left}>
-            <BroadCromp data='frendzo peri peri' />
+            <BroadCromp data={data.restaurant_name} />
             <div className={styles.statusParent+' '+styles.margin30_0}>
               <span className={styles.statusTag+' '+styles.close}>CLOSED</span> 
               <span className={styles.time +' '+'roboto400'}>14:00 - 22:30 Open</span> 
               <span className={styles.time +' '+'roboto300 ml10'}> | </span> 
               <span className={styles.time +' '+'roboto400 ml10'}> free Delivery </span> 
             </div>
-            <NameDisplay nameMerchant={'frendzo peri peri'} cuisine={['kebab','burger','pizza']} />
-            <RateDisplay/>
+            <NameDisplay nameMerchant={data.restaurant_name} cuisine={data.cuisine} />
+            <RateDisplay data={data.ratings} />
             
         </div>
 
         <div className={styles.right}>
-            <Image className={styles.backImg} width={500} height={300} src='https://grub24s3.s3.eu-west-2.amazonaws.com/resized/500x0/upload/1656078658-A Farm Pizza - Exeter.webp' alt='backgrund shop' />
+            <Image className={styles.backImg} width={500} height={300} src={`https://grub24s3.s3.eu-west-2.amazonaws.com/resized/500x0/upload/${data.bg}`} alt='backgrund shop' />
         </div>
     </div>
   )

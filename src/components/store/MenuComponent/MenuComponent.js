@@ -10,6 +10,11 @@ const MenuComponent = ({data}) => {
   const categoryFoodRef = useRef(null);
   const [isMenuFixed, setIsMenuFixed] = useState(false);
   const [distance, setDistance] = useState(null);
+  const [activeItem, setActiveItem] = useState();
+
+  const handleClick = (item) => {
+    setActiveItem(item);
+  }
 
   useEffect(() => {
 
@@ -36,7 +41,7 @@ const MenuComponent = ({data}) => {
   }
 
   return (
-    <div ref={categoryFoodRef} className={`${styles.menuComponent} dFlex`}>
+    <div ref={categoryFoodRef} className={`${styles.menuComponent} dFlexPro`}>
       <div ref={menuRef}
         style={{ position: isMenuFixed ? 'fixed' : 'static', top: isMenuFixed ? 0 : 'auto' }}
         className={styles.categoryFood}>
@@ -44,64 +49,30 @@ const MenuComponent = ({data}) => {
           {
             data.length? 
         
-        data.map(item => <Link key={item.category_id} className={`${styles.categoryLink} roboto400`} to={`${item.category_id}`} smooth={true} duration={500}>{item.category_name}</Link>)
+        data.map(item => <Link onClick={() => handleClick(item.category_id)} key={item.category_id} className={activeItem == item.category_id? `${item.category_id} ${styles.categoryLink} ${styles.active} roboto400` : `${item.category_id} ${styles.categoryLink} roboto400` } to={`${item.category_id}`} smooth={true} duration={500}>{item.category_name}</Link>)
             : <h1>LOADING</h1>
-              }
+          }
           </div>
           <div style={{ paddingTop: '50px', marginLeft: isMenuFixed? '20%' : '0%' }} className={styles.foodItemParent}>
-            <div className={`${styles.categoryContent} roboto300 w100`} id="section1">
-              <div className={`${styles.content} dFlexProMax flexWrap`}>
-              {data.length ? (
-      data.map((element, index) => {
-        // console.log(index);
-        console.log(element);
-        return (
-          <div key={element.category_name} className={`${styles.categoryTitle} roboto700`}>
-            {element.category_name}
-            {element.item.map((item) => (
-              <ItemFood key={item.id} item={item} />
-            ))}
-          </div>
-        );
-      })
-    ) : (
-      <h1>LOADING</h1>
-    )}
-            
 
-          </div>
-        </div>
-        <div className={`${styles.categoryContent} roboto300 w100`} id="section2">
-          .<br />2
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />2
-        </div>
-        <div className={`${styles.categoryContent} roboto300 w100`} id="section3">
-          .<br />3
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />
-          .<br />3
-        </div>
+              {data.length ? (
+                data.map((element, index) => {
+                  // console.log(index);
+                  // console.log(element);
+                  return (
+                    <div key={element.category_id} className={`${styles.categoryContent} roboto300 w100`} id={element.category_id}>
+                    <div key={index} className={`${styles.content} dFlexProMax flexWrap`}>
+                    <div key={element.category_name} className={`${styles.categoryTitle} w100 roboto700`}>{element.category_name}</div>
+                      {element.item.map((item) => (
+                        <ItemFood key={item.id} item={item} />
+                      ))}
+                    </div>
+                    </div>
+                    
+                  );
+                })
+                ) : (<h1>LOADING</h1>)
+                }
       </div>
     </div>
   );

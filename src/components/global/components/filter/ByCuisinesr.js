@@ -63,7 +63,7 @@ const ByCuisinesr = () => {
         {
             cuisinesr&& cuisinesr.map(item => {
                 return(
-                    <div className={styles.row+' '+'dFlexPro'}>
+                    <div key={item} className={styles.row+' '+'dFlexPro'}>
                     <div className={styles.checkBox}></div>
                     <span className={styles.text+' '+'roboto400'}>{item}</span>
                     </div>

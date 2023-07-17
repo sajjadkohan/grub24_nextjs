@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import styles from '@/components/store/MerchantDetail.module.css';
 import Image from 'next/image';
 import rateGif from '@/../../public/images/rate5.gif';
+import { fixedNumber } from '../../../../utils/functions';
 
-const RateDisplay = () => {
-  const[favourite,setFavourite] = useState(true);
+const RateDisplay = ({data}) => {
+  const[favourite,setFavourite] = useState(false);
 
   const toggleFavourite = () => {
     setFavourite(!favourite);
@@ -15,7 +16,7 @@ const RateDisplay = () => {
   return (
     <div className={styles.rateDisplay+' '+'mt40 dflex algCenter'}>
         <span className={styles.gifParent}><Image alt='hearh gif' className={styles.gif} width={55} height={45} src={rateGif} /></span>
-        <span className={styles.rateValue+' '+'ml20 roboto300'}>3.4</span>
+        <span className={styles.rateValue+' '+'ml20 roboto300'}>{fixedNumber(data)}</span>
         <span className={styles.text+' '+'ml20 roboto300'}>out of 5</span>
         <button onClick={toggleFavourite} className={favourite? `${styles.favButton} ${styles.active} dFlexProMax ml20` : `${styles.favButton} dFlexProMax ml20`}>
           <span className={favourite? styles.icon+' '+styles.on : styles.icon+' '+styles.off}>

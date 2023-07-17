@@ -9,10 +9,11 @@ import banner3 from '../../../public/images/grubSwiper/banner3.webp';
 import ListMerchant from '@/components/browse/listMerchant/ListMerchant';
 import {dataForSwiper} from '@/../utils/constanst';
 import GetMerchants from '@/components/browse/listMerchant/GetMerchants';
+import MerchantContext from '@/context/MerchantContext';
 
 const grubSwiperData= [
   {
-    title :  `Get up to 30% Discount`,
+    title :  `Get up to 20% Discount`,
     desc : ' Exclusive to Grub24',
     image : banner1
   },
@@ -22,7 +23,7 @@ const grubSwiperData= [
     image : banner2
   },
   {
-    title :  "Get up to 30% Discount",
+    title :  "Get up to 10% Discount",
     desc : ' Exclusive to Grub24',
     image : banner3
   }
@@ -39,7 +40,9 @@ const browsePage = () => {
 
         <div className={styles.body}>
         <GrubSwiper data={grubSwiperData}/>
-        <GetMerchants/>
+        <MerchantContext>
+          <GetMerchants/>
+        </MerchantContext>
         {/* <ListMerchant data={dataForSwiper} /> */}
         </div>
 
