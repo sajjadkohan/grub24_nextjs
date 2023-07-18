@@ -1,6 +1,9 @@
 .browsePage{position: relative;}
-.browsePage .filter {width: 15%;}
-.browsePage .body {width: 85%;padding-left: 7%;}
+.browsePage .filter {width: 19%;}
+.browsePage .body {width: 81%;padding-left: 4%;}
+.browsePage .content{width: 93%;}
+.merchantListParent{padding-right: 4%;padding-bottom: 4%;}
+.loadingMerchantList{text-align: center;display: flex;justify-content: center;align-items: center;}
 /* .browsePage .content{} */
 
 

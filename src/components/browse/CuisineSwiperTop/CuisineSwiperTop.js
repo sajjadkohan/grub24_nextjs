@@ -42,7 +42,25 @@ const CuisineSwiperTop = ({data,showMap}) => {
         }}
         modules={[Navigation]}
         spaceBetween={30}
-        slidesPerView={width > 767? 4.7 : 1}
+        breakpoints={{
+          100 : {
+            slidesPerView: 2.2,
+            spaceBetween: 5,
+          },
+          640: {
+            slidesPerView: 2.7,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4.7,
+            spaceBetween: 30,
+          },
+        }}
+        // slidesPerView={width > 767? 4.7 : 1}
        
         
         className={styles.mySwiper+' '+styles.topSwiper+' '+"mySwiper br20"}

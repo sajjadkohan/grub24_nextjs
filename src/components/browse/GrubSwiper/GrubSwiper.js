@@ -42,7 +42,25 @@ const GrubSwiper = ({data,showMap}) => {
         }}
         modules={[Navigation]}
         spaceBetween={7}
-        slidesPerView={width > 767? 2.5 : 1}
+        breakpoints={{
+          100 : {
+            slidesPerView: 1,
+            spaceBetween: 5,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+        }}
+        // slidesPerView={width > 767? 2.5 : 1}
        
         
         className={styles.mySwiper+' '+styles.grubSwiper+' '+"mySwiper br20"}
