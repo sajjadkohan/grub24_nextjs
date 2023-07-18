@@ -3,6 +3,7 @@ import './globals.css'
 import { Roboto } from 'next/font/google'
 import Footer from '@/components/global/components/Footer/Footer'
 import { ViewWrapper } from '@/context/ViewContext'
+import LoginModal from '@/components/global/components/LoginModal/LoginModal'
 
 const roboto = Roboto({ subsets: ['latin'] ,weight : ['300'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
           <ViewWrapper>
             <Header/>
+            <LoginModal />
                 {children}
             <Footer/>
           </ViewWrapper>
