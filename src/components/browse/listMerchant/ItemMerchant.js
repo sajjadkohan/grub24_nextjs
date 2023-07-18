@@ -17,7 +17,7 @@ const ItemMerchant = ({data ,cuisine}) => {
     useEffect(()=> {
         setGradeState([parseInt(data.grade)]);
         // console.log(cuisine);
-        console.log(data);
+        // console.log(data);
         setDiscountState(data.offer)
     },[data])
 
@@ -31,7 +31,7 @@ const ItemMerchant = ({data ,cuisine}) => {
                                 <Image alt="image" className={styles.imageSwiper} src={data.background} width={2000} height={2000} />
                                 </div>
                                 <div className={styles.rateParent}>
-                                    <span className={styles.rate+' '+'roboto700'}>{fixedNumber(data.ratings)}</span>
+                                    <span className={styles.rate+' '+'roboto500'}>{fixedNumber(data.ratings)}</span>
                                     <span className={styles.icon}>
                                         <svg id="icon-star" xmlns="http://www.w3.org/2000/svg" width="14" height="13.3" viewBox="0 0 14 13.3">
                                         <path id="Path_9" data-name="Path 9" d="M7.687.439l1.561,3.13a.779.779,0,0,0,.587.423l3.5.509a.783.783,0,0,1,.515.3.757.757,0,0,1,.147.571.775.775,0,0,1-.225.442L11.233,8.269a.741.741,0,0,0-.225.675l.624,3.455a.78.78,0,0,1-.624.89.818.818,0,0,1-.5-.08L7.387,11.583a.818.818,0,0,0-.737,0L3.528,13.209A.8.8,0,0,1,2.454,12.9a.792.792,0,0,1-.081-.491L3,8.95a.741.741,0,0,0-.225-.675L.238,5.82a.758.758,0,0,1,0-1.092.76.76,0,0,1,.45-.221L4.184,4a.779.779,0,0,0,.587-.423L6.276.439a.776.776,0,0,1,.712-.43h.094A.78.78,0,0,1,7.687.439Z" transform="translate(-0.002 -0.003)" fill="#efba61"></path>
@@ -70,7 +70,7 @@ const ItemMerchant = ({data ,cuisine}) => {
 
                                                 )
                                             })
-                                        }
+                                        } 
                                     </div>
                                 </div>
                                 

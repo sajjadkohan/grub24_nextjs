@@ -5,13 +5,14 @@ import { BASE_URL } from '../../../../utils/constanst';
 import TabComponent from '@/components/store/TabComponent/TabComponent';
 
 const MerchantDetail= async(props) => {
-  console.log(props.params.slug);
-
-  const res = await fetch(`${BASE_URL}/NextApi/GetPruduct?slug=${props.params.slugn}`,{
+  
+  const res = await fetch(`${BASE_URL}/NextApi/GetPruduct?slug=${props.params.slug}`,{
     method : 'GET',
     cache : 'no-store'
-   })
-const detailsShop = await res.json()
+  })
+  const detailsShop = await res.json()
+  // console.log('>>>>>>>>>>',detailsShop);
+  // console.log('>>>>>>>>>>',props.params);
 
   return (
     <div className={styles.merchantDetail}>
@@ -23,4 +24,4 @@ const detailsShop = await res.json()
   )
 }
 
-export default MerchantDetail
+export default MerchantDetail;

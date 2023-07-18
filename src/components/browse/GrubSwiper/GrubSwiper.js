@@ -50,7 +50,7 @@ const GrubSwiper = ({data,showMap}) => {
         {
             data&&data.map(slide => {
                 return(
-                <SwiperSlide key={slide.id}>
+                <SwiperSlide key={slide.title}>
                     <Link className="dBlock plr5" href={'/'}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
