@@ -49,8 +49,12 @@ const MenuComponent = ({data}) => {
           {
             data.length? 
         
-        data.map(item => <Link onClick={() => handleClick(item.category_id)} key={item.category_id} className={activeItem == item.category_id? `${item.category_id} ${styles.categoryLink} ${styles.active} roboto400` : `${item.category_id} ${styles.categoryLink} roboto400` } to={`${item.category_id}`} smooth={true} duration={500}>{item.category_name}</Link>)
-            : <h1>LOADING</h1>
+        data.map(item => {
+          return (
+            <Link onClick={() => handleClick(item.category_id)} key={item.category_id} className={activeItem == item.category_id? `${item.category_id} ${styles.categoryLink} ${styles.active} roboto400` : `${item.category_id} ${styles.categoryLink} roboto400` } to={`${item.category_id}`} smooth={true} duration={500}>{item.category_name}</Link>
+                 )
+                })
+                  : <h1>LOADING</h1>
           }
           </div>
           <div style={{ paddingTop: '50px', marginLeft: isMenuFixed? '20%' : '0%' }} className={styles.foodItemParent}>

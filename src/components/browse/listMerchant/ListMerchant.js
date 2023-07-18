@@ -5,6 +5,8 @@ import { MerchantCtx } from '@/context/MerchantContext';
 import axios from 'axios';
 import { BASE_URL } from '../../../../utils/constanst';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import styles from '@/components/browse/BrowsePage.module.css';
+import ReactLoading from 'react-loading';
 
 const ListMerchant = ({  }) => {
 
@@ -53,14 +55,14 @@ const ListMerchant = ({  }) => {
 
   return (
     <>
-      <div className='resultView roboto500'>{total?total : <span>wait . . .</span>} results found</div>
+      <div className='resultView roboto500 algCenter'>{total?total : <ReactLoading type={'spin'} className='mr10' color={'#aaa'} height={'5%'} width={'2%'} /> } results found</div>
       <InfiniteScroll
       dataLength={items.length}
       next={fetchItems}
       hasMore={hasMore}
-      loader={<h4>Loading ... </h4>}
+      loader={<div className={styles.loadingMerchantList}><ReactLoading type={'bars'} color={'#028dee'} height={'3%'} width={'8%'} /> </div>}
     >
-      <div className='dFlexProMax flexWrap'>
+      <div className={`dFlexProMax flexWrap ${styles.merchantListParent}`}>
         {
         // merchantList.length > 1 ?
           items.map((item) => (
