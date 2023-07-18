@@ -270,7 +270,6 @@ const dataSwiperCuisine = [
 export default function Home() {
   return (
     <main className={styles.main}>
-      <LoginModal />
       <section>
         <BannerSearch/>
       </section>
