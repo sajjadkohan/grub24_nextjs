@@ -1,0 +1,82 @@
+.contImgAbout{
+    width: 100%;
+    height: 500px;
+    background: url('../../images/about.png') no-repeat center;
+    background-size: 100% ;
+}
+
+.el1{
+    text-align: center;
+    font-size: 21px;
+    font-family: Arial;
+    font-weight: 400;
+    margin-top: 39px;
+    line-height: 37px;
+    color: #333;
+}
+
+.contSec1About {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.contSec1About > div{
+    width: 48%;
+}
+
+.contImgSec1Ab{
+    width: 100%;
+    height: 855px;
+    position: relative;
+}
+
+.el5{
+    margin-bottom: 35px;
+}
+
+.el5 h5{
+    font-family: roboto;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.el5 p{
+    font-family: roboto;
+    font-weight: 400;
+    color: #555;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.cont3SecAbout{
+    margin-top: 100px;
+}
+
+.cont3SecAbout h2{
+    font-family: roboto;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    line-height: 39px;
+    margin-bottom: 50px;
+}
+
+.el10{
+    margin-top: 30px;
+}
+
+.el10 h4{
+    font-family: roboto;
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+
+.el10 p {
+    font-family: roboto;
+    font-weight: 400;
+    color: #555;
+    line-height: 22px;
+    font-size: 14px;
+}
