@@ -13,7 +13,15 @@ const nextConfig = {
                 hostname : 'grub24.co.uk',
                 pathname : '/**',
                 port : ''
-            }
+            },
+            {
+                protocol : 'https',
+                hostname : 'd3o47ov0yc40fm.cloudfront.net',
+                pathname : '/**',
+                port : ''
+            },
+ 
+            
         ]
     }
 }

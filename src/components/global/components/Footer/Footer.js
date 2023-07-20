@@ -36,13 +36,13 @@ const Footer = () => {
               <Link href={'/'}> For Restaurants</Link>
               </li>
               <li>
-              <Link href={'/'}> For Careers</Link>
+              <Link href={'/careers'}> For Careers</Link>
               </li>
               <li>
-              <Link href={'/'}>About Us</Link>
+              <Link href={'/about-us'}>About Us</Link>
               </li>
               <li>
-              <Link href={'/'}>Blog</Link>
+              <Link href={'/blog'}>Blog</Link>
               </li>
             </ul>
 
@@ -51,10 +51,10 @@ const Footer = () => {
             <h5 className='roboto500'>Legal</h5>
             <ul className='roboto400'>
               <li>
-              <Link href={'/'}>Terms & Conditions</Link>
+              <Link href={'/terms'}>Terms & Conditions</Link>
               </li>
               <li>
-              <Link href={'/'}>Cookies</Link>
+              <Link href={'/cookies'}>Cookies</Link>
               </li>
               <li>
               <Link href={'/'}>Privacy</Link>

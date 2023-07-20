@@ -1,0 +1,77 @@
+.contBlog{
+    padding-top: 80px;
+}
+
+.contBlog h1{
+    font-family: roboto;
+    text-align: center;
+}
+
+.contItem{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    position: relative;
+}
+
+.contItem::after{
+    position: absolute;
+    top: 36%;
+    content: "";
+    right: -16%;
+    background: url(../../images/rg.png) no-repeat center;
+    background-size: auto;
+    background-size: auto;
+    width: 280px;
+    height: 185px;
+    background-size: 100% 100%;
+}
+
+.item{
+    width: 45%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px #c2c1c175;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.item > div{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item h3 {
+    font-family: roboto;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.item p {
+    font-family: roboto;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 19px;
+}
+
+.item button{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    background: #058ef0;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-family: roboto;
+    font-size: 16px;
+}
