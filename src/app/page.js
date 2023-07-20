@@ -43,7 +43,8 @@ const dataSwiper = [
     status : 'closed',
     freeDelivery : true,
     deliveryTime : '30 - 45 min',
-    image : slide1
+    image : slide1,
+    restaurant_slug : 'italian-wood-fire-pizzeria'
   },
   {
     id: 'skfe34554ss',
@@ -53,7 +54,8 @@ const dataSwiper = [
     status : 'open',
     freeDelivery : true,
     deliveryTime : '30 - 40 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'moores-walk-cafe'
   },
   {
     id: 'skfe345we54',
@@ -63,7 +65,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide3
+    image : slide3,
+    restaurant_slug : 'manos-grill-pizza'
   },
   {
     id: 'skfe345xcgg54',
@@ -73,7 +76,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide4
+    image : slide4,
+    restaurant_slug : 'guildford-kebab-house'
   },
   {
     id: 'skfesfv34554',
@@ -83,7 +87,8 @@ const dataSwiper = [
     status : 'closed',
     freeDelivery : true,
     deliveryTime : '30 - 45 min',
-    image : slide6
+    image : slide6,
+    restaurant_slug : 'walk-2-wok-kilburn'
   },
   {
     id: 'skfe3452sdd54',
@@ -93,7 +98,8 @@ const dataSwiper = [
     status : 'open',
     freeDelivery : true,
     deliveryTime : '30 - 40 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'moores-walk-cafe'
   },
   {
     id: 'skfe3434554554',
@@ -103,7 +109,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide3
+    image : slide3,
+    restaurant_slug : 'manos-grill-pizza'
   },
   {
     id: 'skfe3455wxxfvd4',
@@ -113,7 +120,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'guildford-kebab-house'
   },
   {
     id: 'skfe3465554',
@@ -123,7 +131,8 @@ const dataSwiper = [
     status : 'closed',
     freeDelivery : true,
     deliveryTime : '30 - 45 min',
-    image : slide1
+    image : slide1,
+    restaurant_slug : ''
   },
   {
     id: 'skfe3454454ss',
@@ -133,7 +142,8 @@ const dataSwiper = [
     status : 'open',
     freeDelivery : true,
     deliveryTime : '30 - 40 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'moores-walk-cafe'
   },
   {
     id: 'skfe3455we54',
@@ -143,7 +153,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide3
+    image : slide3,
+    restaurant_slug : 'manos-grill-pizza'
   },
   {
     id: 'skfe3345xcgg54',
@@ -153,7 +164,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide4
+    image : slide4,
+    restaurant_slug : 'guildford-kebab-house'
   },
   {
     id: 'skfesf3v34554',
@@ -163,7 +175,8 @@ const dataSwiper = [
     status : 'closed',
     freeDelivery : true,
     deliveryTime : '30 - 45 min',
-    image : slide6
+    image : slide6,
+    restaurant_slug : 'walk-2-wok-kilburn'
   },
   {
     id: 'skfe3452sd3d54',
@@ -173,7 +186,8 @@ const dataSwiper = [
     status : 'open',
     freeDelivery : true,
     deliveryTime : '30 - 40 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'moores-walk-cafe'
   },
   {
     id: 'skfe34345534554',
@@ -183,7 +197,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide3
+    image : slide3,
+    restaurant_slug : 'manos-grill-pizza'
   },
   {
     id: 'skfe3455wxxf2vd4',
@@ -193,7 +208,8 @@ const dataSwiper = [
     status : 'pre-order',
     freeDelivery : false,
     deliveryTime : '30 - 60 min',
-    image : slide2
+    image : slide2,
+    restaurant_slug : 'guildford-kebab-house'
   },
   
 ];

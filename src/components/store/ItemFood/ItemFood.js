@@ -6,8 +6,8 @@ const ItemFood = ({item}) => {
   return (
     <div className={item.photo?`${styles.itemFood} w100` : `${styles.itemFood}`}>
       <div className={`${styles.card} dFlex w100`}>
-          <div className={styles.left}>
-          <h4 className={`${styles.titleCard}`}>{item.item_name}</h4>
+          <div style={item.photo? {width : '40%'} : {width: '100%'}} className={styles.left}>
+          <h4 className={`${styles.titleCard} roboto500`}>{item.item_name}</h4>
           <p dangerouslySetInnerHTML={{ __html: item.item_description }} className='roboto400'></p>
           <span className={`${styles.price} roboto500`}> £5.95</span>
           </div>
