@@ -106,7 +106,7 @@
 .menuComponent .categoryFood{width: 16%;}
 .menuComponent .foodItemParent{width: 58%;padding-right: 20px;}
 .menuComponent .categoryLink{width: 100%;display: block;padding: 8px 0px;transition: 0.3s all;position: relative;}
-.menuComponent .categoryLink.active{color: #058ef0;font-size: 15px;}
+.menuComponent .active{color: #058ef0;font-size: 15px;}
 .menuComponent .categoryLink::before{content:'';
     width: 0px;
     height: 2px;
@@ -144,8 +144,8 @@
 .itemFood .card .left{width: 40%;}
 .itemFood .card .right{width: 60%;display: flex;justify-content: end;align-items: center;}
 .itemFood .card .price{font-size: 14px;color: #058EF0;margin-right: 10px;}
-.menuComponent .foodItemParent .categoryContent{margin-top: 40px;}
-
+.menuComponent .foodItemParent .categoryContent{margin-bottom: 40px;}
+.categoryFoodContent{transition: 0.5s all;}
 
 
 

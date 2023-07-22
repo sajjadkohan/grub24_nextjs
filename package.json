@@ -32,6 +32,7 @@
     "react-sticky": "^6.0.3",
     "react-sticky-box": "^2.0.4",
     "sass": "^1.62.1",
+    "sticky-sidebar": "^3.3.1",
     "swiper": "^9.3.2"
   }
 }

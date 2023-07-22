@@ -69,7 +69,7 @@ export default function SwiperSlider({data}) {
             data&&data.map(slide => {
                 return(
                 <SwiperSlide key={slide.id}>
-                    <Link className="dBlock" href={'/'}>
+                    <Link className="dBlock" href={`/store/${slide.restaurant_slug}`}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
                                 <div className={styles.imageDiv}>

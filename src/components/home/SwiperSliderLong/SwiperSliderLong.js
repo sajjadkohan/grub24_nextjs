@@ -67,7 +67,7 @@ export default function SwiperSliderLong({data}) {
             data&&data.map(slide => {
                 return(
                 <SwiperSlide key={slide.id}>
-                    <Link className={styles.linkTag+' '+"dBlock"} href={'/'}>
+                    <Link className={styles.linkTag+' '+"dBlock"} href={`store/${slide.restaurant_slug}`}>
                         <div className={styles.cardItem}>
                             <div className={styles.imageParent}>
                                 <div className={styles.imageDiv}>
