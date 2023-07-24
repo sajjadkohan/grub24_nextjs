@@ -80,7 +80,7 @@ const MenuComponent = ({data}) => {
 
 {/*category*/}  </div>
 
-{/*food Item*/}  <div className={styles.foodItemParent}>
+{/*food Item*/} <div className={styles.foodItemParent}>
 
               {data.length ? (
                 data.map((element, index) => {
@@ -103,7 +103,14 @@ const MenuComponent = ({data}) => {
                 })
                 ) : (<h1>LOADING</h1>)
                 }
-{/*food Item*/}  </div>
+{/*food Item*/} </div>
+
+{/*card sidebar*/} <div className={styles.cardSidebar}>
+                    <div className={styles.foodAllergy}>
+                      food allergy
+                    </div>
+                    <div className={styles.card}>card</div>
+{/*card sidebar*/} </div>
 
     </div>
   );
