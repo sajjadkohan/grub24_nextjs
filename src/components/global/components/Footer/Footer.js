@@ -57,10 +57,10 @@ const Footer = () => {
               <Link href={'/cookies'}>Cookies</Link>
               </li>
               <li>
-              <Link href={'/'}>Privacy</Link>
+              <Link href={'/privacy'}>Privacy</Link>
               </li>
               <li>
-              <Link href={'/'}> Use Policy</Link>
+              <Link href={'/acceptable-use-policy'}> Use Policy</Link>
               </li>
             </ul>
 
@@ -70,10 +70,10 @@ const Footer = () => {
             <h5 className='roboto500'>Hot Links</h5>
             <ul className='roboto400'>
               <li>
-              <Link href={'/'}>About us</Link>
-              </li>
+              <Link href={'/about-us'}>About us</Link>
+              </li> 
               <li>
-              <Link href={'/'}>Contact us</Link> 
+              <Link href={'/contact'}>Contact us</Link> 
               </li>
               <li>
               <Link href={'/'}>FAQ</Link>
