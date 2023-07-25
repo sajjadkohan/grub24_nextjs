@@ -5,6 +5,14 @@ import { Link } from 'react-scroll';
 import Image from 'next/image';
 import ItemFood from '../ItemFood/ItemFood';
 import { BASE_URL } from '../../../../utils/constanst';
+import AllergyFood from '../AllergyFood/AllergyFood';
+import { LuSearch } from 'react-icons/lu';
+import DeliveryAddress from '../DeliveryAddress/DeliveryAddress';
+import DeliveryFee from '../DeliveryFee/DeliveryFee';
+import ListItemOrder from '../ListItemOrder/ListItemOrder';
+import TotalBasket from '../TotalBasket/TotalBasket';
+import ChangeOrderType from '../ChangeOrderType/ChangeOrderType';
+
 
 const MenuComponent = ({data}) => {
   const menuRef = useRef(null);
@@ -82,6 +90,11 @@ const MenuComponent = ({data}) => {
 
 {/*food Item*/} <div className={styles.foodItemParent}>
 
+                <form className={styles.searchBox}>
+                  <input placeholder='Search by Menu' className={styles.inputSearch} type='text' />
+                  <button type='submit' className={styles.searchBtn} ><LuSearch/></button>
+                </form>
+
               {data.length ? (
                 data.map((element, index) => {
                   // console.log(index);
@@ -107,9 +120,15 @@ const MenuComponent = ({data}) => {
 
 {/*card sidebar*/} <div className={styles.cardSidebar}>
                     <div className={styles.foodAllergy}>
-                      food allergy
+                      <AllergyFood phone={'07133291243'} />
                     </div>
-                    <div className={styles.card}>card</div>
+                    <div className={styles.card}>
+                      <DeliveryAddress/>
+                      <DeliveryFee/>
+                      <ListItemOrder />
+                      <TotalBasket/>
+                      <ChangeOrderType/>
+                    </div>
 {/*card sidebar*/} </div>
 
     </div>

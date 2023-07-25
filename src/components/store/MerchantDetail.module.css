@@ -89,7 +89,7 @@
 .favButton:hover svg{animation: anim 0.3s 0s linear;}
 
 /*tabComponent*/
-.tabComponent{margin-right: 60px;border-top: 1px solid #ccc;margin-top: 40px;}
+.tabComponent{margin-right: 0px;border-top: 1px solid #ccc;margin-top: 40px;}
 .tabComponent .tabTitle{font-size: 14px;color: #393636;}
 .tabComponent .tabTitle .badge{
     padding: 2px 7px;
@@ -103,8 +103,10 @@
 }
 
 /*menuComponent*/
-.menuComponent .categoryFood{width: 16%;}
-.menuComponent .foodItemParent{width: 58%;padding-right: 20px;}
+.menuComponent .categoryFood{width: 18%;}
+.menuComponent .foodItemParent{width: 54%;padding-right: 20px;}
+.menuComponent .cardSidebar{width: 28%;}
+
 .menuComponent .categoryLink{width: 100%;display: block;padding: 8px 0px;transition: 0.3s all;position: relative;}
 .menuComponent .active{color: #058ef0;font-size: 15px;}
 .menuComponent .categoryLink::before{content:'';
@@ -148,40 +150,177 @@
 .categoryFoodContent{transition: 0.5s all;}
 
 
+/*allergy*/
+.allergyParent .allergy{
+    width: 100%;
+    padding: 25px 10px !important;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 48px #e1d8d8;
+    display: block;
+    cursor: pointer;
+}
+.allergyParent .allergy .text{font-size: 12px;}
+.allergyParent .allergy .icon{
+    margin-right: 15px;
+    font-size: 15px;
+    color: white;
+    background: rgb(13, 154, 255);
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.allergyParent .modal{width: 100%;height: 100%;position: fixed;background-color: #33333363;left: 0px;top: 0px;z-index: 1;}
+.allergyParent .modal .backModal{width: 100%;height: 100%;justify-content: center;position: absolute;left: 0px;top: 0px;}
+.allergyParent .modal .contentModal{width: 100%;height: 100%;justify-content: center;}
+.allergyParent .modal .modalValue{
+    width: 300px;
+    height: auto;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+}
+.allergyParent .modal .modalValue .head{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between;
+}
+.allergyParent .modal .modalValue .head button{background-color: transparent;border: none;font-size: 24px;cursor: pointer;}
+.allergyParent .modal .modalValue .footer{padding: 15px;border-top: 1px solid #e5e5e5;}
+.allergyParent .modal .modalValue .footer .close{
+    width: 100%;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    border: 1px solid;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.allergyParent .modal .modalValue .body{padding: 15px;}
+.allergyParent .modal .modalValue .body p span{color: #0A99FF !important;}
+
+/*card*/
+.cardSidebar .card{
+    width: 100%;
+    padding: 25px 10px !important;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 48px #e1d8d8;
+    display: block;
+    margin-top: 15px;
+}
+
+/*searchBox*/
+.searchBox{text-align: right;position: relative;}
+.searchBox .inputSearch{
+    width: 200px;
+    height: 100%;
+    background: #F3F3F3;
+    border: none;
+    padding: 8px 10px;
+    color: #6b6b6b;
+}
+.searchBox .inputSearch:focus{outline: none;}
+.searchBox .inputSearch::placeholder{color: #8c8c8c;}
+.searchBox .searchBtn{position: absolute;background-color: transparent;border: none;
+right: 0px;
+width: 40px;display: flex;
+align-items: center;height: 100%;
+justify-content: center;
+top: 0px;
+}
 
 
+/*change Delivery*/
+.changeDelivery{
+    padding: 15px;
+    background: #F8F8F8;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+.changeDelivery .botText{margin-top: 5px;}
+.changeDelivery .botText h3{text-transform: uppercase;}
+.changeDelivery .botText button{font-size: 13px;color: #0A99FF;}
 
+/*deliveryFee*/
+.deliveryFee{margin-bottom: 18px;}
+.deliveryFee .row{margin-bottom: 5px;}
+.deliveryFee .row p{font-size: 14px;color: #333333;}
+.deliveryFee .row p:last-child{font-size: 15px;}
+.horisRow {width: 100%;height: 2px;border-radius: 5px;margin-top: 17px;background: #F8F8F8;overflow: hidden;}
 
+/*itemOrder*/
+.itemOrder{padding-bottom: 5px;padding-top: 5px;border-bottom: 1px solid #E4E7EA;}
+.itemOrder .body{transition: 0.3s all;}
+.itemOrder .body:hover{background-color: #cfeffc;}
+.itemOrder .incDec{
+    background: #0A99FF0F;
+    border: 2px solid #0A99FF;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0A99FF;
+    font-size: 15px;
+    font-weight: bold;
+}
+.itemOrder .body .left{width: 73px;float: left;}
+.itemOrder .body .right{width: 50px;float: right;}
+.itemOrder .body .center{width: 170px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.itemOrder .body .center .nameItem{font-size: 14px;display: inline;white-space: nowrap;}
+.itemOrder .body .center .nameCategory{font-size: 12px;color: #777;display: block;margin-top: 5px;}
+.itemOrder .body .right .price{font-size: 15px;}
+.itemOrder .body .right button{font-size: 14px;color: #058EF0;}
+.itemOrder .body .right{text-align: right;}
+.itemOrder .desc{
+    width: 100%;
+    background: #F8F8F8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 12px;
+    color: #31708f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.moreDetail .row{
+    font-size: 11px;
+    border-bottom: 2px solid #ccc;
+}
+.moreDetail .row:last-child{border: none;}
+.moreDetail .row .addon{width: 100px;line-height: 16px;}
+.moreDetail .row .count{width: 28px;}
+.moreDetail .row .priceF{color: #bbb !important;font-size: 11px !important;margin-left: 10px;}
+.moreDetail .row .price{width: 46px;text-align: right;}
+.moreDetail .row .name{display: inline;white-space: nowrap;font-size: 11px;}
+.moreDetail .row .parentName{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 130px;}
 
+/*totalBasket*/
+.totalBasket .row{margin-top: 17px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*changeOrderType*/
+.changeOrderType{
+    background: #f8f8f8;
+    padding: 7px 3px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
 
 
 
