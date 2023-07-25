@@ -320,9 +320,14 @@ top: 0px;
     padding: 7px 3px;
     border-radius: 15px;
     margin-top: 20px;
+    position: relative;
 }
 
-
+.changeOrderType .parentType{text-align: center;padding: 10px;border-radius: 15px;cursor: pointer;color: #393636;width: 50%;position: relative;}
+.changeOrderType .parentType.active{color: #fff;}
+.changeOrderType .parentTypep,.changeOrderType .parentType span{font-size: 14px;}
+.changeOrderType .parentType.active p,.changeOrderType .parentType.active span{color: #fff;position: relative;z-index: 1;}
+.changeOrderType .activeTag{transition: 0.3s all;background: #393636;width: 48%;height: 100%;position: absolute;padding: 10px;border-radius: 15px;}
 
 
 
