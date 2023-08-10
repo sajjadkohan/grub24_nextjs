@@ -6,6 +6,12 @@ const TotalBasket = () => {
     <div className={styles.totalBasket}>
 
       <div className={`${styles.row} dFlexProMax`}>
+        <span className='roboto400'>Discount 15%</span>
+        <span className='roboto400'>(£10.46)</span>
+      </div>
+
+
+      <div className={`${styles.row} dFlexProMax`}>
         <span className='roboto400'>Sub Total</span>
         <span className='roboto400'>£45.66</span>
       </div>

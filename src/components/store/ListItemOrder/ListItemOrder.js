@@ -1,11 +1,15 @@
-import React from 'react'
+'use client';
+import React, { useContext } from 'react'
 import styles from '@/components/store/MerchantDetail.module.css'
 import ItemOrder from '../ItemOrder/ItemOrder';
 import { Collapse } from 'antd';
 import ItemOrderAction from '../ItemOrderAction/ItemOrderAction';
 import ItemOrderDetail from '../ItemOrderDetail/ItemOrderDetail';
+import { cartCtx } from '@/context/CartContext';
 
 const ListItemOrder = () => {
+
+  const {cartItemState} = useContext(cartCtx); 
 
   const dataCard = [
     {
@@ -80,24 +84,27 @@ const ListItemOrder = () => {
     console.log(key);
   };
 
-  const items = dataCard.map((item, index) => {
+  const items = cartItemState? 
+  cartItemState.map((item, index) => {
     return {
       key: index + 1,
-      label: <ItemOrderAction itemData={item} />,
-      children: <ItemOrderDetail itemData={item}  />,
+      label: <ItemOrderAction key={item.item_id} itemData={item} />,
+      children: <ItemOrderDetail key={item.item_id} itemData={item}  />,
     };
-  });
+  }) 
+  :
+   [];
 
   return (
     <div className={`${styles.listItemOrder}`}>
       <Collapse items={items} onChange={onChange} />
       {
-        dataCard?
-        dataCard.map(item => {
+        cartItemState?
+        cartItemState.map(item => {
           return(
             <>
             <div className='itemOrder'>
-              <ItemOrder dataItemFood={item} allItem={dataCard} />
+              <ItemOrder key={item.item_id} dataItemFood={item} allItem={cartItemState} />
             </div>
             </>
           )

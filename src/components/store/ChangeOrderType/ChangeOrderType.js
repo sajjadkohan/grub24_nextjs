@@ -20,7 +20,7 @@ const ChangeOrderType = () => {
 
     <div className={`${styles.changeOrderType} dFlexProMax`}>
 
-      <div onClick={activeHandler} className={orderType==='delivery'? `${styles.delivery} ${styles.parentType} ${styles.active}` : `${styles.delivery} ${styles.parentType}` }>
+      <div onClick={orderType==='collection'? activeHandler : null} className={orderType==='delivery'? `${styles.delivery} ${styles.parentType} ${styles.active}` : `${styles.delivery} ${styles.parentType}` }>
         <span className='roboto400'>Delivery</span>
         <p className='roboto700'>
           Starts From
@@ -33,7 +33,7 @@ const ChangeOrderType = () => {
 
       </div>
 
-      <div onClick={activeHandler} className={orderType==='delivery'? `${styles.collection} ${styles.parentType}` : `${styles.delivery} ${styles.parentType}  ${styles.active}`}>
+      <div onClick={orderType==='delivery'? activeHandler : null} className={orderType==='delivery'? `${styles.collection} ${styles.parentType}` : `${styles.delivery} ${styles.parentType}  ${styles.active}`}>
         <span className='roboto400'>Collection</span>
         <p className='roboto700'>
           Starts From

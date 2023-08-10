@@ -14,13 +14,13 @@ const ItemOrderAction = ({itemData}) => {
                       <button className={styles.incDec}>+</button>
                   </div>
                   <div className={`${styles.center} popoverItem roboto400`}>
-                    <Popover title="16pcs Chicken Buckets , test test test test">
-                      <span className={`${styles.nameItem} roboto400`}>{itemData.nameFood}</span>
-                      <span className={`${styles.nameCategory} roboto400`}>({itemData.categoryName})</span>
+                    <Popover title={itemData.item_name}>
+                      <span className={`${styles.nameItem} roboto400`}>{itemData.item_name}</span>
+                      <span className={`${styles.nameCategory} roboto400`}>({itemData.category_name})</span>
                     </Popover>
                   </div>
                   <div className={styles.right}>
-                  <span className={`${styles.price} roboto500`}>£{itemData.price}</span>
+                  <span className={`${styles.price} roboto500`}>£{itemData.prices[0].price}</span>
                   <button className='btnNoneStyle roboto500'>edit</button>
                   </div>
               </div>

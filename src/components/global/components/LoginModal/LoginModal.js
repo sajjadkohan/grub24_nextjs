@@ -5,7 +5,6 @@ import styles from "./login.module.css"
 
 const LoginModal = () => {
     const {loginModal, setLoginModal} = useContext(ViewContext);
-    console.log(loginModal)
   return (
     <>
     {

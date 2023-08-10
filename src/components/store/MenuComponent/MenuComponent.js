@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import styles from '@/components/store/MerchantDetail.module.css';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
@@ -12,18 +12,25 @@ import DeliveryFee from '../DeliveryFee/DeliveryFee';
 import ListItemOrder from '../ListItemOrder/ListItemOrder';
 import TotalBasket from '../TotalBasket/TotalBasket';
 import ChangeOrderType from '../ChangeOrderType/ChangeOrderType';
+import ItemViewAddToCard from '../ItemViewAddToCard/ItemViewAddToCard';
+import { cartCtx } from '@/context/CartContext';
+import { ViewContext } from '@/context/ViewContext';
 
 
 const MenuComponent = ({data}) => {
   const menuRef = useRef(null);
   const categoryFoodRef = useRef(null);
   const menuLinkParent = useRef(null);
-  const titleCategoryTag =useRef(null)
+  const titleCategoryTag =useRef(null);
 
   const [isMenuFixed, setIsMenuFixed] = useState(false);
   const [distance, setDistance] = useState(null);
   const [activeItem, setActiveItem] = useState();
   // const [showCategory,setShowCeategory] = useState(false);
+
+  // context
+  const {addItem,cartItemState} = useContext(cartCtx); 
+  const { setCartModal , cartModal } = useContext(ViewContext);
 
   useEffect(() => {
     console.log(data);
@@ -67,7 +74,7 @@ const MenuComponent = ({data}) => {
     data.map(item => {
       return (
         <Link 
-        activeClass={styles.active}
+        activeClass={styles.activeStyle}
         key={item.category_id} 
         className={`${item.category_id} ${styles.categoryLink} roboto400 algCenter` } 
         to={item.category_id} 
@@ -107,7 +114,7 @@ const MenuComponent = ({data}) => {
                       {element.photo ? <Image className='ml5' src={`https://grub24s3.s3.eu-west-2.amazonaws.com/upload/${element.photo}`} width={20} height={20} alt='logo category' /> : <span></span>}
                     </div>
                       {element.item.map((item) => (
-                        <ItemFood key={item.id} item={item} />
+                          <ItemFood key={item.id} item={item} />
                       ))}
                     </div>
                     </div>
@@ -118,6 +125,7 @@ const MenuComponent = ({data}) => {
                 }
 {/*food Item*/} </div>
 
+                     {cartModal&&<ItemViewAddToCard/>} 
 {/*card sidebar*/} <div className={styles.cardSidebar}>
                     <div className={styles.foodAllergy}>
                       <AllergyFood phone={'07133291243'} />
@@ -125,9 +133,17 @@ const MenuComponent = ({data}) => {
                     <div className={styles.card}>
                       <DeliveryAddress/>
                       <DeliveryFee/>
+                      {
+                        cartItemState.length?
+                      <div>
                       <ListItemOrder />
                       <TotalBasket/>
+                      </div>
+                        :
+                        <p className='roboto400'>No Item added yet!</p>
+                      }
                       <ChangeOrderType/>
+                      <button className='btnBlue'>Go to Checkout</button>
                     </div>
 {/*card sidebar*/} </div>
 

@@ -32,10 +32,10 @@ const MobileAppSection = () => {
                 <div className='w-100'>
                     <div className={styles.parentDownload}>
                         <Link href={'/'} className={styles.btnDownload}>
-                            <Image width={200} height={100} src={appStore} />
+                            <Image alt='app store' width={200} height={100} src={appStore} />
                         </Link>
                         <Link href={'/'} className={styles.btnDownload}>
-                            <Image width={200} height={100} src={googlePlay} />
+                            <Image alt='google play' width={200} height={100} src={googlePlay} />
                         </Link>
                         <div className='w100'>
                         <p className={styles.desc2+' '+'roboto400'}>Current version: iOS 2.9.1 | Android 2.9.1</p>

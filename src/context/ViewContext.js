@@ -4,11 +4,13 @@ import { createContext, useState } from "react";
 export const ViewContext = createContext();
 export const ViewWrapper = ({children}) => {
 
-    const [loginModal, setLoginModal] = useState(false)
+    const [loginModal, setLoginModal] = useState(false);
+    const [cartModal, setCartModal] = useState(false);
+
     
     return (
         <ViewContext.Provider value={{
-            loginModal, setLoginModal
+            loginModal, cartModal, setCartModal, setLoginModal
         }}>
             {children}
         </ViewContext.Provider>

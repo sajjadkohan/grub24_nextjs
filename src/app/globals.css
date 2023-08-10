@@ -186,7 +186,19 @@ p {margin: 0px 0;}
   cursor: pointer;
   font-size: 14px;
 }
-
+.btnBlue{
+  font-size: 16px;
+font-family: 'Roboto';
+font-weight: 500;
+color: #fff;
+background: #058EF0;
+border-radius: 12px;
+margin-top: 15px;
+width: 100%;
+padding: 10px 10px;
+border: none;
+cursor: pointer;
+}
 
 /*buttons*/
 /*__________________________________________*/

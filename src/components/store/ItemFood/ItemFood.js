@@ -1,10 +1,22 @@
-import React from 'react'
+'use client'
+import React, { useContext } from 'react'
 import styles from '@/components/store/MerchantDetail.module.css'
 import Image from 'next/image'
+import { cartCtx } from '@/context/CartContext'
+import { ViewContext } from '@/context/ViewContext'
 
 const ItemFood = ({item}) => {
+
+  const {addItem} = useContext(cartCtx); 
+  const { setCartModal , cartModal } = useContext(ViewContext);
+
   return (
-    <div className={item.photo?`${styles.itemFood} w100` : `${styles.itemFood}`}>
+    <div 
+    onClick={() => {
+      addItem(item);
+      setCartModal(true)
+    }} 
+    className={item.photo?`${styles.itemFood} w100` : `${styles.itemFood}`}>
       <div className={`${styles.card} dFlex w100`}>
           <div style={item.photo? {width : '40%'} : {width: '100%'}} className={styles.left}>
           <h4 className={`${styles.titleCard} roboto500`}>{item.item_name}</h4>
