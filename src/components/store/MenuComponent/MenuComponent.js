@@ -17,7 +17,7 @@ import { cartCtx } from '@/context/CartContext';
 import { ViewContext } from '@/context/ViewContext';
 
 
-const MenuComponent = ({data}) => {
+const MenuComponent = ({data,detailShop}) => {
   const menuRef = useRef(null);
   const categoryFoodRef = useRef(null);
   const menuLinkParent = useRef(null);
@@ -33,7 +33,8 @@ const MenuComponent = ({data}) => {
   const { setCartModal , cartModal } = useContext(ViewContext);
 
   useEffect(() => {
-    console.log(data);
+    // console.log(data);
+    console.log(detailShop);
     window.addEventListener('scroll', handleScroll,{ passive: true });
     return () => {
       window.removeEventListener('scroll', handleScroll);

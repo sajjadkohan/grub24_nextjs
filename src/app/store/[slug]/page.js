@@ -11,7 +11,7 @@ const MerchantDetail= async(props) => {
     method : 'GET',
     cache : 'no-store'
   })
-  const detailsShop = await res.json()
+  const detailsShop = await res.json();
   // console.log('>>>>>>>>>>',detailsShop);
   // console.log('>>>>>>>>>>',props.params);
 

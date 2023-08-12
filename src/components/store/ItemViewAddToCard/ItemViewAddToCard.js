@@ -6,6 +6,9 @@ import Prices from '../Prices/Prices';
 import WithSalad from '../WithSalad/WithSalad';
 import CheckBox from '../CheckBox/CheckBox';
 import TextAreaRequest from '../TextAreaRequest/TextAreaRequest';
+import Counter from '../Counter/Counter';
+import RadioButton from '../RadioButton/RadioButton';
+import ChooseBox from '../ChooseBox/ChooseBox';
 
 const ItemViewAddToCard = () => {
   const { setCartModal , cartModal } = useContext(ViewContext);
@@ -33,50 +36,17 @@ const ItemViewAddToCard = () => {
             <p className='roboto400'>8pcs Chicken Nuggets, Large Chips & Can Drink</p>
           </div>
 
-          <div className={`${styles.formGroup} ${styles.radioButton}`}>
 
-            <div className={`${styles.listAddon} ${styles.radioButtonParent}`}>
-            <div className={styles.title}>Pizza</div>
-            <div className={styles.content}>
-
-              <label className={`${styles.radioBox} dFlexPro`}>
-              <input type="radio" name="pack_cat[14227][0]" id="cat_pack_14227_0_9" parentname="Pizza" required="required"  value="108944|Tasty Chicken" />
-              <i className={styles.i}></i>
-              <span className={styles.labelText}>Tasty Chicken</span>
-              </label>
-
-              <label className={`${styles.radioBox} dFlexPro`}>
-              <input type="radio" name="pack_cat[14227][0]" id="cat_pack_14227_0_9" parentname="Pizza" required="required"  value="108944|Tasty Chicken" />
-              <i className={styles.i}></i>
-              <span className={styles.labelText}>Tasty Chicken</span>
-              </label>
-
-              <label className={`${styles.radioBox} dFlexPro`}>
-              <input type="radio" name="pack_cat[14227][0]" id="cat_pack_14227_0_9" parentname="Pizza" required="required"  value="108944|Tasty Chicken" />
-              <i className={styles.i}></i>
-              <span className={styles.labelText}>Tasty Chicken</span>
-              </label>
-
-              <label className={`${styles.radioBox} dFlexPro`}>
-              <input type="radio" name="pack_cat[14227][0]" id="cat_pack_14227_0_9" parentname="Pizza" required="required"  value="108944|Tasty Chicken" />
-              <i className={styles.i}></i>
-              <span className={styles.labelText}>Tasty Chicken</span>
-              </label>
-
-            </div>
-
-            </div>
-
-          </div>
-
+          <RadioButton/>
           <Prices/>
-          <WithSalad/>
+          <ChooseBox title='Would You Like Salad?' boxes={['With Salad','no Salad']}/>
           <CheckBox/>
           <TextAreaRequest/>
         </div>
 
-        <div className={styles.footer}>
-          footer
+        <div className={`${styles.footer} dFlexPro`}>
+          <Counter/>
+          <button className={styles.addBtn}>Add to Cart</button>
         </div>
 
         </div>
