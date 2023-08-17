@@ -3,6 +3,7 @@ import styles from '../../../components/store/MerchantDetail.module.css';
 import Head from '@/components/store/Head/Head';
 import { BASE_URL } from '../../../../utils/constanst';
 import TabComponent from '@/components/store/TabComponent/TabComponent';
+import CartContext from '@/context/CartContext';
 
 const MerchantDetail= async(props) => {
   
@@ -10,7 +11,7 @@ const MerchantDetail= async(props) => {
     method : 'GET',
     cache : 'no-store'
   })
-  const detailsShop = await res.json()
+  const detailsShop = await res.json();
   // console.log('>>>>>>>>>>',detailsShop);
   // console.log('>>>>>>>>>>',props.params);
 
@@ -18,7 +19,9 @@ const MerchantDetail= async(props) => {
     <div className={styles.merchantDetail}>
       <div className='container1170'>
         <Head data={detailsShop.result[0]} />
+        <CartContext>
         <TabComponent data={detailsShop.result[0]} />
+        </CartContext>
       </div>
     </div>
   )

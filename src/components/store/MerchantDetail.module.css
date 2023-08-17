@@ -89,7 +89,7 @@
 .favButton:hover svg{animation: anim 0.3s 0s linear;}
 
 /*tabComponent*/
-.tabComponent{margin-right: 60px;border-top: 1px solid #ccc;margin-top: 40px;}
+.tabComponent{margin-right: 0px;border-top: 1px solid #ccc;margin-top: 40px;}
 .tabComponent .tabTitle{font-size: 14px;color: #393636;}
 .tabComponent .tabTitle .badge{
     padding: 2px 7px;
@@ -103,10 +103,12 @@
 }
 
 /*menuComponent*/
-.menuComponent .categoryFood{width: 16%;}
-.menuComponent .foodItemParent{width: 58%;padding-right: 20px;}
+.menuComponent .categoryFood{width: 18%;}
+.menuComponent .foodItemParent{width: 54%;padding-right: 20px;}
+.menuComponent .cardSidebar{width: 28%;}
+
 .menuComponent .categoryLink{width: 100%;display: block;padding: 8px 0px;transition: 0.3s all;position: relative;}
-.menuComponent .active{color: #058ef0;font-size: 15px;}
+.menuComponent .activeStyle{color: #058ef0;font-size: 15px;}
 .menuComponent .categoryLink::before{content:'';
     width: 0px;
     height: 2px;
@@ -148,73 +150,421 @@
 .categoryFoodContent{transition: 0.5s all;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*allergy*/
+.allergyParent .allergy{
+    width: 100%;
+    padding: 25px 10px !important;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 48px #e1d8d8;
+    display: block;
+    cursor: pointer;
+}
+.allergyParent .allergy .text{font-size: 12px;}
+.allergyParent .allergy .icon{
+    margin-right: 15px;
+    font-size: 15px;
+    color: white;
+    background: rgb(13, 154, 255);
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.allergyParent .modal{width: 100%;height: 100%;position: fixed;background-color: #33333363;left: 0px;top: 0px;z-index: 1;}
+.allergyParent .modal .backModal{width: 100%;height: 100%;justify-content: center;position: absolute;left: 0px;top: 0px;}
+.allergyParent .modal .contentModal{width: 100%;height: 100%;justify-content: center;}
+.allergyParent .modal .modalValue{
+    width: 300px;
+    height: auto;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+}
+.allergyParent .modal .modalValue .head{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between;
+}
+.allergyParent .modal .modalValue .head button{background-color: transparent;border: none;font-size: 24px;cursor: pointer;}
+.allergyParent .modal .modalValue .footer{padding: 15px;border-top: 1px solid #e5e5e5;}
+.allergyParent .modal .modalValue .footer .close{
+    width: 100%;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    border: 1px solid;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.allergyParent .modal .modalValue .body{padding: 15px;}
+.allergyParent .modal .modalValue .body p span{color: #0A99FF !important;}
+
+/*card*/
+.cardSidebar .card{
+    width: 100%;
+    padding: 25px 10px !important;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 48px #e1d8d8;
+    display: block;
+    margin-top: 15px;
+}
+
+/*searchBox*/
+.searchBox{text-align: right;position: relative;}
+.searchBox .inputSearch{
+    width: 200px;
+    height: 100%;
+    background: #F3F3F3;
+    border: none;
+    padding: 8px 10px;
+    color: #6b6b6b;
+}
+.searchBox .inputSearch:focus{outline: none;}
+.searchBox .inputSearch::placeholder{color: #8c8c8c;}
+.searchBox .searchBtn{position: absolute;background-color: transparent;border: none;
+right: 0px;
+width: 40px;display: flex;
+align-items: center;height: 100%;
+justify-content: center;
+top: 0px;
+}
+
+
+/*change Delivery*/
+.changeDelivery{
+    padding: 15px;
+    background: #F8F8F8;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+.changeDelivery .botText{margin-top: 5px;}
+.changeDelivery .botText h3{text-transform: uppercase;}
+.changeDelivery .botText button{font-size: 13px;color: #0A99FF;}
+
+/*deliveryFee*/
+.deliveryFee{margin-bottom: 18px;}
+.deliveryFee .row{margin-bottom: 5px;}
+.deliveryFee .row p{font-size: 14px;color: #333333;}
+.deliveryFee .row p:last-child{font-size: 15px;}
+.horisRow {width: 100%;height: 2px;border-radius: 5px;margin-top: 17px;background: #F8F8F8;overflow: hidden;}
+
+/*itemOrder*/
+.itemOrder{padding-bottom: 5px;padding-top: 5px;border-bottom: 1px solid #E4E7EA;}
+.itemOrder .body{transition: 0.3s all;}
+.itemOrder .body:hover{background-color: #cfeffc;}
+.itemOrder .incDec{
+    background: #0A99FF0F;
+    border: 2px solid #0A99FF;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0A99FF;
+    font-size: 15px;
+    font-weight: bold;
+}
+.itemOrder .body .left{width: 73px;float: left;}
+.itemOrder .body .right{width: 50px;float: right;}
+.itemOrder .body .center{width: 170px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.itemOrder .body .center .nameItem{font-size: 14px;display: inline;white-space: nowrap;}
+.itemOrder .body .center .nameCategory{font-size: 12px;color: #777;display: block;margin-top: 5px;}
+.itemOrder .body .right .price{font-size: 15px;}
+.itemOrder .body .right button{font-size: 14px;color: #058EF0;}
+.itemOrder .body .right{text-align: right;}
+.itemOrder .desc{
+    width: 100%;
+    background: #F8F8F8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 12px;
+    color: #31708f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.moreDetail .row{
+    font-size: 11px;
+    border-bottom: 2px solid #ccc;
+}
+.moreDetail .row:last-child{border: none;}
+.moreDetail .row .addon{width: 100px;line-height: 16px;}
+.moreDetail .row .count{width: 28px;}
+.moreDetail .row .priceF{color: #bbb !important;font-size: 11px !important;margin-left: 10px;}
+.moreDetail .row .price{width: 46px;text-align: right;}
+.moreDetail .row .name{display: inline;white-space: nowrap;font-size: 11px;}
+.moreDetail .row .parentName{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 130px;}
+
+/*totalBasket*/
+.totalBasket .row{margin-top: 17px;}
+
+/*changeOrderType*/
+.changeOrderType{
+    background: #f8f8f8;
+    padding: 7px 3px;
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.changeOrderType .parentType{text-align: center;padding: 10px;border-radius: 15px;cursor: pointer;color: #393636;width: 50%;position: relative;}
+.changeOrderType .parentType.active{color: #fff;}
+.changeOrderType .parentTypep,.changeOrderType .parentType span{font-size: 14px;}
+.changeOrderType .parentType.active p,.changeOrderType .parentType.active span{color: #fff;position: relative;z-index: 1;}
+.changeOrderType .activeTag{transition: 0.3s all;background: #393636;width: 48%;height: 100%;position: absolute;padding: 10px;border-radius: 15px;}
+
+
+/*itemViewAddToCard*/
+
+@keyframes openCartModal {
+    0%{transform: translateX(100%);-webkit-transform: translateX(100%);}
+    100%{transform: translateX(0%);-webkit-transform: translateX(0%);}
+
+}
+
+.itemViewAddToCard{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    direction: ltr;
+    height: 100%;
+    display: flex;
+    transition: 0.3s all;
+    animation: openCartModal 0.3s 0s cubic-bezier(.22,.61,.36,1);
+    
+}
+.itemViewAddToCard.open{transform: translateX(0%)!important;}
+.itemViewAddToCard .leftBackground{width: 68%;backdrop-filter: blur(2px);background: #000000a3;}
+.itemViewAddToCard .rightContent{width: 32%;background: #fff;position: relative;overflow: auto;}
+.itemViewAddToCard .rightContent .closeBtn{
+    background: #fff;
+    padding: 13px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    right: 41%;
+    position: absolute;
+    left: -77px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+}
+
+.itemViewAddToCard .rightContent .closeBtn:hover{background: #e5e5e5;}
+.itemViewAddToCard .rightContent .head {padding-top: 50%;position: relative;overflow: hidden;}
+.itemViewAddToCard .rightContent .head img {
+    max-width: 129%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.itemViewAddToCard .rightContent .body{overflow: scroll;padding-bottom: 110px;}
+.itemViewAddToCard .rightContent .body .text{padding: 20px 20px 10px 20px;}
+.itemViewAddToCard .rightContent .body .text h4{font-size: 24px;color: #333333;}
+.itemViewAddToCard .rightContent .body .text p{font-size: 12px;color: #777;}
+.formGroup.radioButton .title{background: #f0f9ff;padding: 12px 46px;}
+
+.formGroup .title{
+    padding: 12px 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+.formGroup .radioBox [type="radio"] {
+    opacity: 0;
+    z-index: -1000000;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+  .formGroup .radioBox i {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+    transition: 0.3s all;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+.formGroup .radioBox span{text-overflow: ellipsis;width: 100%;overflow: hidden;white-space: nowrap;font-family: Roboto;font-weight: 700;}
+.formGroup .radioBox{padding: 3px 20px;}
+.formGroup .radioButtonParent .content{max-height: 280px !important;}
+
+
+/*prices*/
+.prices.formGroup .title{
+    padding: 12px 20px;
+    background: none;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+} 
+
+.prices.formGroup .radioBox{
+    color: #000;
+    border-radius: 10px !important;
+    background: #f3f3f3 !important;
+}
+.prices.formGroup .radioBox i {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+    transition: 0.3s all;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+}
+.prices.formGroup .radioBox{padding: 5px 15px;margin-left: 10px;}
+.prices.formGroup .radioBox:first-child{margin-left: 0px;}
+.prices.formGroup .content{padding: 0px 20px;}
+.prices.formGroup .radioBox span{font-family: 'Roboto';font-weight: 400;}
+.prices.formGroup .radioBox.active{color: #fff;background-color: #058ef0!important;}
+.prices.formGroup .radioBox.active i{border: 4px solid #fff;background-color: transparent!important;}
+
+/*chooseBox*/
+.chooseBox .radioBox .icon{
+    font-size: 29px;
+    font-weight: 400 !important;
+    font-family: 'Roboto';
+    margin-right: 10px;
+    transition: 0.3s all;
+}
+.chooseBox.formGroup .radioBox.active .left {transform: rotate(48deg);position: relative;top: 3px;}
+.chooseBox.formGroup .radioBox.active .left .icon{color: #d8d8d8;font-size: 27px;}
+.chooseBox.formGroup .radioBox{height: 35px;}
+
+
+/*checkBox*/
+
+.formGroup.checkBox .radioBox{margin-top: 10px;}
+.formGroup.checkBox .radioBox:hover .i{background: #c1c1c1 url(../../../public/images/tick.png) no-repeat center;background-size: 65%;transition: 0.01s all;}
+.formGroup.checkBox .i{
+    min-width: 24px !important;
+    width: 23px;
+    height: 22px;
+    border: 2px solid #c1c1c1;
+    border-radius: 7px;
+    margin-right: 10px !important;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.formGroup.checkBox .radioBox.active i{
+    background-color: #1a9fff !important;
+    border: 2px solid #1a9fff;
+    background: #1a9fff url(../../../public/images/tick.png) no-repeat center;
+    background-size: 65%;
+}
+
+.formGroup.checkBox .labelText{font-weight: 400;font-family: 'Roboto';position: relative;}
+.formGroup.checkBox .labelText::after{content:'-';right: 0px;position: absolute;top:0px;}
+
+.formGroup.radioButton .content{padding-top: 10px;}
+/*textAreaRequest*/
+.textAreaRequest .content{padding: 0px 20px;}
+.textAreaRequest .content textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #F3F3F3;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    min-height: 100px;
+    text-align: left;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.textAreaRequest .content textarea:focus{outline: none;}
+.textAreaRequest .content textarea::placeholder{color: #414141;}
+.textAreaRequest .title{
+    padding: 12px 20px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+/*footer*/
+.rightContent{position: relative;}
+.rightContent .footer{position: fixed;
+    right: 0;
+    border: 0;
+    bottom: 0px;
+    width: 32%;
+    padding: 22px 10px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    z-index: 1111;}
+
+
+/*counter*/
+
+.rightContent .counter .btnCounter{
+    border: 2px solid #0A99FF !important;
+    font-size: 18px !important;
+    line-height: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 0px !important;
+    border-radius: 100%;
+    background-color: #0A99FF0F !important;
+    color: #1a9fff;
+}
+
+.rightContent .counter .counterView{color: #1a9fff;text-align: center;padding: 5px 0px;font-size: 25px;font-weight: bold;margin: 0px 10px;}
+.rightContent .addBtn{
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    background: #058EF0;
+    border-radius: 12px;
+    margin-left: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
 
 

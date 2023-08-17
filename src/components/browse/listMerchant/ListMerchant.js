@@ -39,7 +39,6 @@ const ListMerchant = ({  }) => {
       setMerchantListFn(res.data.result[0].list);
       setDataMerchantStsteFn(res.data.result[0].cuis);
       setTotal(res.data.result[0].total)
-      console.log(res.data.result[0].total);
     })
     .catch(err => console.log(err))
   }
