@@ -60,7 +60,7 @@ const ListMerchant = ({  }) => {
   // fetch data
   const fetchItems = async () => {
     try {
-      const response = await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}${byDelivery.key}=${byDelivery.value}`);
+      const response = await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}`);
       const newItems = response.data.result[0].list;
       if (!newItems) {
         setHasMore(false);
@@ -80,7 +80,7 @@ const ListMerchant = ({  }) => {
   const getData = async () => {
 
     try {
-      const response = await fetch(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}${byDelivery.key}=${byDelivery.value}`,{
+      const response = await fetch(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}`,{
         cache : 'reload',
         method : 'GET'
       });
@@ -89,7 +89,7 @@ const ListMerchant = ({  }) => {
       console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>',data);
       if(data) {
         setMerchantList(data.result[0].list);
-        setItems(merchantList.length?data.result[0].list: merchantList);
+        setItems(data.result[0].list);
         setDataMerchantState(data.result[0].cuis);
         setTotalMerchant(data.result[0].total);
       } else {
@@ -148,7 +148,7 @@ const ListMerchant = ({  }) => {
       <div className='resultView roboto500 algCenter'>{totalMerchant?totalMerchant : <ReactLoading type={'spin'} className='mr10' color={'#aaa'} height={'5%'} width={'2%'} /> } results found</div>
       <button onClick={() => getData2()}>get new data</button>
       <InfiniteScroll
-      dataLength={merchantList.length}
+      dataLength={items.length}
       next={fetchItems}
       hasMore={hasMore}
       loader={<div className={styles.loadingMerchantList}>{hasMore?<ReactLoading type={'bars'} color={'#028dee'} height={'3%'} width={'8%'} /> : <></>} </div>}
@@ -156,7 +156,7 @@ const ListMerchant = ({  }) => {
       <div className={`dFlexProMax flexWrap ${styles.merchantListParent}`}>
         {
         // merchantList.length > 1 ?
-          merchantList.map((item) => (
+          items.map((item) => (
             <>
             <ItemMerchant cuisine={dataMerchantState} key={item.merchant_id} data={item} />
             </>

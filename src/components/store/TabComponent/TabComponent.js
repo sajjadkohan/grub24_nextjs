@@ -52,7 +52,7 @@ const TabComponent = ({data}) => {
 
   return (
     <div className={`${styles.tabComponent} tabComponent`}>
-        <Tabs tabBarExtraContent={operations} data={data} defaultActiveKey="5" items={items} onChange={onChange} />
+        <Tabs tabBarExtraContent={operations} data={data} defaultActiveKey="1" items={items} onChange={onChange} />
     </div>
   )
 }
