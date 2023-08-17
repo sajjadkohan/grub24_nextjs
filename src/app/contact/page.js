@@ -1,9 +1,9 @@
-import ViewPrivacy from '@/components/privacy/ViewPrivacy'
+import ViewContact from '@/components/contact/ViewContact'
 import React from 'react'
 
 const page = () => {
   return (
-      <ViewPrivacy />
+    <ViewContact />
   )
 }
 
