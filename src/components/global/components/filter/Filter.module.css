@@ -35,6 +35,7 @@
 
 .titleFilter{font-size: 13px;color: #333333;}
 .row{margin-top: 20px;}
+.row.active .radioButton{box-shadow: 0 0 0 6px #058ef0 inset;border-color: #058ef0 !important;outline: 4px solid #058ef0;outline-offset: -5px;}
 .row:last-child{margin-bottom: 5px;}
 .row .text{font-size: 14px;color:#393639}
 .parent{border-bottom: 2px solid #ececec; padding-bottom: 11px;padding-top: 20px;}

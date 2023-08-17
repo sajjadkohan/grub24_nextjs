@@ -26,6 +26,7 @@
     "react-map-gl": "^7.0.25",
     "react-measure": "^2.5.2",
     "react-parallax": "^3.5.1",
+    "react-rater": "^6.0.5",
     "react-rotating-text": "^1.4.1",
     "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.4.2",

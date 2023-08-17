@@ -4,6 +4,7 @@ import { Roboto } from 'next/font/google'
 import Footer from '@/components/global/components/Footer/Footer'
 import { ViewWrapper } from '@/context/ViewContext'
 import LoginModal from '@/components/global/components/LoginModal/LoginModal'
+import MerchantContext from '@/context/MerchantContext'
 
 const roboto = Roboto({ subsets: ['latin'] ,weight : ['300'] })
 
@@ -17,10 +18,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
           <ViewWrapper>
+            <MerchantContext>
             <Header/>
             <LoginModal />
                 {children}
             <Footer/>
+            </MerchantContext>
           </ViewWrapper>
         </body>
     </html>

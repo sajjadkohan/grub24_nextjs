@@ -22,10 +22,17 @@ const MenuComponent = ({data,detailShop}) => {
   const categoryFoodRef = useRef(null);
   const menuLinkParent = useRef(null);
   const titleCategoryTag =useRef(null);
+  // const cardTag = useRef(null);
+  // const cardRef = useRef(null);
 
   const [isMenuFixed, setIsMenuFixed] = useState(false);
   const [distance, setDistance] = useState(null);
   const [activeItem, setActiveItem] = useState();
+  
+  // const [isMenuFixedd, setIsMenuFixedd] = useState(false);
+  // const [distancee, setDistancee] = useState(null);
+  // const [activeItemm, setActiveItemm] = useState();
+
   // const [showCategory,setShowCeategory] = useState(false);
 
   // context
@@ -44,7 +51,7 @@ const MenuComponent = ({data,detailShop}) => {
 
   function handleScroll() {
     const spaceTop = menuLinkParent.current.getBoundingClientRect().top;
-    const heightWindow = window.innerHeight;
+    // const heightWindow = window.innerHeight;
     const menuHeight = menuRef.current.offsetHeight;
     const windowHeight = window.innerHeight;
     const scrollTop = window.scrollY;
@@ -54,6 +61,19 @@ const MenuComponent = ({data,detailShop}) => {
     const isFixed = scrollTop > menuRef.current.offsetTop && menuHeight > windowHeight;
     setIsMenuFixed(categoryFoodTop <= 50);
     setDistance(categoryFoodTop - menuTop);
+
+    /*card*/
+    // const spaceTopCard = menuLinkParent.current.getBoundingClientRect().top;
+    // const cardHeight = menuRef.current.offsetHeight;
+    // const windowHeightt = window.innerHeight;
+    // const scrollTopp = window.scrollY;
+
+    // // const { top: menuTopp } = cardTag.current.getBoundingClientRect();
+    // // console.log();
+    // const { top: cardtop } = cardTag.current.getBoundingClientRect();
+    // const isFixedd = cardtop > cardTag.current.offsetTop && menuHeight > windowHeight;
+    // setIsMenuFixedd(cardtop <= 50);
+    // setDistance(categoryFoodTopp - menuTopp);
 
   }
 
@@ -127,26 +147,7 @@ const MenuComponent = ({data,detailShop}) => {
 {/*food Item*/} </div>
 
                      {cartModal&&<ItemViewAddToCard/>} 
-{/*card sidebar*/} <div className={styles.cardSidebar}>
-                    <div className={styles.foodAllergy}>
-                      <AllergyFood phone={'07133291243'} />
-                    </div>
-                    <div className={styles.card}>
-                      <DeliveryAddress/>
-                      <DeliveryFee/>
-                      {
-                        cartItemState.length?
-                      <div>
-                      <ListItemOrder />
-                      <TotalBasket/>
-                      </div>
-                        :
-                        <p className='roboto400'>No Item added yet!</p>
-                      }
-                      <ChangeOrderType/>
-                      <button className='btnBlue'>Go to Checkout</button>
-                    </div>
-{/*card sidebar*/} </div>
+
 
     </div>
   );

@@ -4,6 +4,7 @@ import Head from '@/components/store/Head/Head';
 import { BASE_URL } from '../../../../utils/constanst';
 import TabComponent from '@/components/store/TabComponent/TabComponent';
 import CartContext from '@/context/CartContext';
+import CartComponent from '@/components/store/CartComponent/CartComponent';
 
 const MerchantDetail= async(props) => {
   
@@ -20,7 +21,10 @@ const MerchantDetail= async(props) => {
       <div className='container1170'>
         <Head data={detailsShop.result[0]} />
         <CartContext>
-        <TabComponent data={detailsShop.result[0]} />
+      <div className='dFlex jstBtn'>
+        <div className={styles.leftSection}><TabComponent data={detailsShop.result[0]} /></div>
+        <div className={styles.rightSection}><CartComponent data={detailsShop.result[0]} /></div>
+      </div>
         </CartContext>
       </div>
     </div>

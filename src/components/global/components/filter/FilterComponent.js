@@ -6,6 +6,7 @@ import ViewFilter from './ViewFilter';
 import ByDelivery from './ByDelivery';
 import ByCuisinesr from './ByCuisinesr';
 import MinimumDelivery from './MinimumDelivery';
+import { FilterContext } from '@/context/FilterContext';
 // import StickyBox from 'react-sticky-box';
 
 
@@ -14,11 +15,13 @@ const FilterComponent = () => {
 
   return (
           <div className={styles.filter}>
+            <FilterContext>
             <SortBy />
             <ViewFilter />
             <ByDelivery />
             <ByCuisinesr />
             <MinimumDelivery />
+            </FilterContext>
           </div>
   );
 };

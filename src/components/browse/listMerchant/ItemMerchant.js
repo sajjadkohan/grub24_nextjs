@@ -16,8 +16,6 @@ const ItemMerchant = ({data ,cuisine}) => {
 
     useEffect(()=> {
         setGradeState([parseInt(data.grade)]);
-        // console.log(cuisine);
-        // console.log(data);
         setDiscountState(data.offer)
     },[data])
 

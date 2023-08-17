@@ -10,6 +10,8 @@ const MerchantContext = ({children}) => {
     const [pageNumber,setPageNumber] = useState(1);
     const [dataMerchantState,setDataMerchantState] = useState();
     const [merchantList,setMerchantList] = useState([]);
+    const [totalMerchant, setTotalMerchant] = useState('');
+
 
     // console.log(merchantList);
 
@@ -19,25 +21,27 @@ const MerchantContext = ({children}) => {
         // console.log(pageNumber);
     }
 
-    const setMerchantListFn = (data) => {
-      setMerchantList(...merchantList,...data);
-      merchantList.length
-    }
+    // const setMerchantListFn = (data) => {
+    //   setMerchantList(...merchantList,...data);
+    //   merchantList.length
+    // }
 
-    const setDataMerchantStsteFn = (data) => {
-      setDataMerchantState(data);
-    }
+    // const setDataMerchantStsteFn = (data) => {
+    //   setDataMerchantState(data);
+    // }
 
 
 
   return (
     <MerchantCtx.Provider value={{
-      setNumberPageFn,
-      setMerchantListFn,
-      setDataMerchantStsteFn,
+      setDataMerchantState,
       merchantList,
+      setMerchantList,
       pageNumber,
-      dataMerchantState
+      setPageNumber,
+      dataMerchantState,
+      totalMerchant,
+      setTotalMerchant
       }}>
         {children}
     </MerchantCtx.Provider>

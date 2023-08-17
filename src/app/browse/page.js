@@ -10,6 +10,7 @@ import ListMerchant from '@/components/browse/listMerchant/ListMerchant';
 import {dataForSwiper} from '@/../utils/constanst';
 import GetMerchants from '@/components/browse/listMerchant/GetMerchants';
 import MerchantContext from '@/context/MerchantContext';
+import { FilterContext } from '@/context/FilterContext';
 
 const grubSwiperData= [
   {
@@ -27,10 +28,11 @@ const grubSwiperData= [
     desc : ' Exclusive to Grub24',
     image : banner3
   }
-]
+];
 
 const browsePage = () => {
   return (
+    <FilterContext>
     <div className={styles.browsePage}>
       <TopSectionBrowse/>
       <div className={styles.content+' '+'containerFluid90 dFlex flexWrap'}>
@@ -40,16 +42,16 @@ const browsePage = () => {
 
         <div className={styles.body}>
         <GrubSwiper data={grubSwiperData}/>
-        <MerchantContext>
-          <GetMerchants/>
-        </MerchantContext>
+
+            <GetMerchants/>
+
         {/* <ListMerchant data={dataForSwiper} /> */}
         </div>
 
-        
       </div>
 
     </div>
+    </FilterContext>
   )
 }
 

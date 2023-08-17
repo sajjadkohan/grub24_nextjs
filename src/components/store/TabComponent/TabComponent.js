@@ -3,6 +3,12 @@ import React from 'react'
 import { Tabs } from 'antd';
 import styles from '@/components/store/MerchantDetail.module.css';
 import MenuComponent from '../MenuComponent/MenuComponent';
+import OpeningHours from '../OpeningHours/OpeningHours/OpeningHours';
+import Reviews from '../Reviews/Reviews/Reviews';
+import LocationView from '../LocationView/LocationView';
+import Information from '../Information/Information';
+
+const operations = <button>Extra Action</button>;
 
 const onChange = (key) => {
     // console.log(key);
@@ -20,33 +26,33 @@ const TabComponent = ({data}) => {
     {
       key: '2',
       label: <span className={`${styles.tabTitle} roboto400`}>Opening Hourse</span>,
-      children: `Content of Tab Pane 2`,
+      children: <OpeningHours/> ,
     },
     {
       key: '3',
       label: <span className={`${styles.tabTitle} roboto400 dFlex`}>Reviews <span className={styles.badge}>26</span></span>,
-      children: `Content of Tab Pane 3`,
+      children: <Reviews/>,
     },
     {
       key: '4',
       label: <span className={`${styles.tabTitle} roboto400 dFlex`}>Map</span>,
-      children: `Content of Tab Pane 3`,
+      children: <LocationView/>,
     },
     {
       key: '5',
       label: <span className={`${styles.tabTitle} roboto400 dFlex`}>Information</span>,
-      children: `Content of Tab Pane 3`,
+      children: <Information/>,
     },
     {
       key: '6',
       label: <span className={`${styles.tabTitle} roboto400 dFlex`}>Booking</span>,
-      children: `Content of Tab Pane 3`,
+      children: <Information/>
     },
   ];
 
   return (
     <div className={`${styles.tabComponent} tabComponent`}>
-        <Tabs data={data} defaultActiveKey="1" items={items} onChange={onChange} />
+        <Tabs tabBarExtraContent={operations} data={data} defaultActiveKey="5" items={items} onChange={onChange} />
     </div>
   )
 }
