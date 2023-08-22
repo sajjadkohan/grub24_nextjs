@@ -7,6 +7,7 @@ import logo from '../../../../images/434x0w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { ViewContext } from '@/context/ViewContext';
+import Auth from './Auth';
 // import { useNavigation } from 'next/navigation'
 const Header = () => {
 
@@ -14,7 +15,7 @@ const Header = () => {
     const itemMenu = useRef(null);
     // const navigation = useNavigation();
     const [activeItem, setActiveItem] = useState(NaN);
-    const { setLoginModal } = useContext(ViewContext);
+    
 
     useEffect(() => {
       const currentPath = window.location.pathname;
@@ -65,15 +66,12 @@ const Header = () => {
                     <li
                         onClick={() => setActiveItem(1)}
                         className={`${styles.liNav} ${activeItem === 1 ? styles.active : ''}`}><Link href="/browse">Restaurants</Link></li>
-                        <li className={styles.liNav+' '+'noneXl'}><Link href={'/'}>Login</Link></li>
-                        <li className={styles.liNav+' '+'noneXl'}><Link href={'/'}>SignUp</Link></li>
+                    <li className={styles.liNav+' '+'noneXl'}><Link href={'/'}>Login</Link></li>
+                    <li className={styles.liNav+' '+'noneXl'}><Link href={'/'}>SignUp</Link></li>
                     <span className={styles.closeIcon+' '+'noneXl'}><FontAwesomeIcon icon={faClose} /></span>    
                     </ul>
                 </div>
-                <div className={styles.loginSign+' '+'dFlex algCenter noneXs'}>
-                    <button onClick={() => setLoginModal(true)} className={'btnStyle btnNoneStyle'}>login</button>
-                    <button className={'btnStyle'+' '+styles.singBtn}>sign Up</button>
-                </div>
+                <Auth />
             </div>
         </div>
         {/* <div className={styles.mapAndFilterParent}>

@@ -417,6 +417,33 @@ img {
     padding: 10px;
 }
 
+.PhoneInput{
+  position: relative;
+}
+
+.PhoneInputInput{
+  padding: 13px 10px;
+  border: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  border: 2px solid #d6d6d6;
+  border-radius: 7px;
+  background: #fafafa;
+  box-shadow: none !important;
+  height: 50px !important;
+  width: 100%;
+  padding-left: 65px;
+}
+
+.PhoneInputCountry{
+  position: absolute!important;
+  top: 18px;
+  left: 15px;
+}
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {

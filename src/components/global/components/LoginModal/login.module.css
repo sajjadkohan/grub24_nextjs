@@ -191,3 +191,175 @@
     top: 13px;
 }
 
+.botComp1{
+    padding: 15px;
+}
+
+.botComp1 > header{
+    justify-content: space-between!important;
+}
+
+.btnbck{
+    padding: 5px 25px;
+    border: none;
+    padding: 10px 20px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contpass2 {
+    margin-top: 20px;
+}
+
+.contpass2 > *{
+    display: block;
+}
+
+.contpass2 > label{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: Roboto;
+}
+
+.contpass2 input{
+    padding: 13px 10px;
+    border: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid #d6d6d6;
+    border-radius: 7px;
+    background: #fafafa;
+    box-shadow: none !important;
+    height: 50px !important;
+    width: 100%;
+}
+
+.fgpas{
+    font-family: Roboto !important;
+    font-weight: 500 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btLoginG{
+    display: block;
+    width: 100%;
+    background: #0a99ff !important;
+    opacity: .4;
+    transition: .5s opacity;
+    border: none !important;
+    font-size: 14px;
+    border-radius: 11px !important;
+    height: 50px !important;
+    color: #fff;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+.btLoginG:hover{
+    opacity: 1!important;
+}
+
+.bxReg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.bxReg > div{
+    width: 48%!important;
+    margin-bottom: 10px!important;
+}
+
+.botComp1 > h5{
+    font-family: Quicksand !important;
+    font-weight: 700 !important;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.phInf{
+    padding: 0 30px;
+margin-top: 12px;
+}
+
+.termFooter{
+    display: flex;
+    align-items: center;
+}
+
+.termFooter{
+    padding: 0 31px;
+margin-top: 20px;
+}
+
+.termFooter > span{
+    width: 27px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.5s all;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.termFooter > span.activing svg{
+    display: block;
+}
+
+.termFooter > span:hover{
+    background: #0a99ff!important;
+    border: 2px solid #0a99ff!important;
+    color: #fff!important;
+}
+
+.termFooter > span.activing{
+    background: #0a99ff!important;
+    border: 2px solid #0a99ff!important;
+    color: #fff!important;
+}
+
+
+
+div.termFooter > p.mic{
+    font-family: Roboto!important;
+    text-align: left!important;
+    margin-top: 0!important;
+    font-weight: 500 !important;
+    font-size: 14px!important;
+    line-height: 23px!important;
+    margin-left: 11px!important;
+}
+
+.termFooter > p.mic a{
+    font-family: Roboto!important;
+    color: #0a99ff !important;
+}
+
+.regCont{
+    border-radius: 11px !important;
+    height: 50px !important;
+    background: #0a99ff !important;
+    display: block;
+    margin: 0 30px;
+      margin-top: 0px;
+    margin-top: 17px;
+    border: none;
+    width: 84%;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    cursor: pointer;
+}

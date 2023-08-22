@@ -36,6 +36,24 @@
     color: #fff;
   }
 
+  .userLogged{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #393636;
+    border-radius: 7px;
+  }
+  
+  .userLogged > span{
+    margin: 0px 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 
 @media (max-width:767px) {
 

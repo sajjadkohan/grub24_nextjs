@@ -88,7 +88,7 @@ export function FilterContext ({children}) {
     //     // .catch(err => console.log(err))
     //   }
 
-    const applySingleFilter = (title,valueFilter,activeClass) => {
+    const applySingleFilter = async (title,valueFilter,activeClass) => {
     switch (title) {
         case 'sortBy':
             setSortBy({...sortBy,value : valueFilter});
@@ -96,7 +96,7 @@ export function FilterContext ({children}) {
 
         case 'byDelivery':
             setByDelivery({...byDelivery,value : valueFilter});
-            axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}${byDelivery.key}=${byDelivery.value}`)
+            await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}${byDelivery.key}=${byDelivery.value}`)
             .then(res => {
                 setMerchantList(res.data.result[0].list);
                 setDataMerchantState(res.data.result[0].cuis);
