@@ -13,8 +13,9 @@ const GetMerchants = async () => {
 
   return (
     <>
-
-    <ListMerchant  />
+    <FilterContext>
+      <ListMerchant  />
+    </FilterContext>
   
     </>
   )

@@ -7,6 +7,7 @@ const ByDelivery = () => {
 
   // const{byDelivery} = useContext(filterCtx)
 
+  // context => use contex for set method and toggle active class
   const {byDelivery,applySingleFilter} = useContext(filterCtx);
 
   const activeHandler = (e) => {
@@ -39,41 +40,48 @@ const ByDelivery = () => {
     <div className={styles.sortBy+' '+styles.parent}>
         <div className={styles.titleFilter+' '+'roboto700'}>By Delivery</div>
         
-        <div onClick={() => {applySingleFilter('byDelivery',1);handleClick(1)}} className={`${styles.row} ${byDelivery.value === 1 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',1)}
+         className={`${styles.row} ${byDelivery.value === 1 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         
         <span className={styles.text+' '+'roboto400'}>Delivery and Collection</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',2);handleClick(2)}} className={`${styles.row} ${byDelivery.value === 2 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',2)}
+         className={`${styles.row} ${byDelivery.value === 2 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         
         <span className={styles.text+' '+'roboto400'}>Delivery Only</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',3);handleClick(3)}} className={`${styles.row} ${byDelivery.value === 3 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',3)}
+         className={`${styles.row} ${byDelivery.value === 3 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         
         <span className={styles.text+' '+'roboto400'}>Collection only</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',4);handleClick(4)}} className={`${styles.row} ${byDelivery.value === 4 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',4)}
+         className={`${styles.row} ${byDelivery.value === 4 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         
         <span className={styles.text+' '+'roboto400'}>Delivery / Collection / Dinein</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',5);handleClick(5)}} className={`${styles.row} ${byDelivery.value === 5 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',5)}
+         className={`${styles.row} ${byDelivery.value === 5 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         <span className={styles.text+' '+'roboto400'}>Delivery & Dinein</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',6);handleClick(6)}} className={`${styles.row} ${byDelivery.value === 6 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',6)}
+         className={`${styles.row} ${byDelivery.value === 6 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         <span className={styles.text+' '+'roboto400'}>Collection & Dinein</span>
         </div>
 
-        <div onClick={() => {applySingleFilter('byDelivery',7);handleClick(7)}} className={`${styles.row} ${byDelivery.value === 7 ? `${styles.active}` : ''} dFlexPro`}>
+        <div onClick={() => applySingleFilter('byDelivery',7)}
+         className={`${styles.row} ${byDelivery.value === 7 ? `${styles.active}` : ''} dFlexPro`}>
         <div className={styles.radioButton}></div>
         <span className={styles.text+' '+'roboto400'}>Dinein Only</span>
         </div>

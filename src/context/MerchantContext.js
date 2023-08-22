@@ -11,6 +11,8 @@ const MerchantContext = ({children}) => {
     const [dataMerchantState,setDataMerchantState] = useState();
     const [merchantList,setMerchantList] = useState([]);
     const [totalMerchant, setTotalMerchant] = useState('');
+    const [hasMore, setHasMore] = useState(true);
+    
 
 
     // console.log(merchantList);
@@ -41,7 +43,9 @@ const MerchantContext = ({children}) => {
       setPageNumber,
       dataMerchantState,
       totalMerchant,
-      setTotalMerchant
+      setTotalMerchant,
+      hasMore,
+      setHasMore
       }}>
         {children}
     </MerchantCtx.Provider>

@@ -18,12 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
           <ViewWrapper>
-            <MerchantContext>
+            
             <Header/>
             <LoginModal />
                 {children}
             <Footer/>
-            </MerchantContext>
           </ViewWrapper>
         </body>
     </html>
