@@ -8,7 +8,7 @@
 /*searchAddress*/
 .searchAddress .title{display: flex;justify-content: start;direction: ltr;align-items: center;flex-wrap: wrap;}
 .searchAddress .title .h1{color: #333333;font-size: 42px;margin-right: 10px;}
-.searchAddress .rotateText{font-size: 37px!important;width: 200px;min-width: 200px;min-height: 53px;}
+.searchAddress .rotateText{font-size: 37px!important;width: 100%;min-width: 200px;min-height: 63px;}
 .searchAddress .formDiv .text{font-weight: 400;font-size: 16px;margin-left: 14px;color: #393636;margin-bottom: 10px;}
 .searchAddress .formDiv .text:last-child{margin-top: 18px;}
 .searchAddress .formDiv .text button{font-size: 14px;margin-right: 3px;}

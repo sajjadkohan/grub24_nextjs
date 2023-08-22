@@ -10,6 +10,7 @@
     max-width: 150% !important;
     min-width: 100%;
     transform: translateY(-50%);
+    max-height: 400px;
 }
 .imageParent{width: 100%;padding: 15px 0px;position: relative;}
 .topSwiper .cardItem{position: relative;background: none;box-shadow: none;}

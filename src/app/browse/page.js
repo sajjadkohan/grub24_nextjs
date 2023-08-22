@@ -32,8 +32,9 @@ const grubSwiperData= [
 
 const browsePage = () => {
   return (
-    <FilterContext>
+    
     <div className={styles.browsePage}>
+      <MerchantContext>
       <TopSectionBrowse/>
       <div className={styles.content+' '+'containerFluid90 dFlex flexWrap'}>
         <div className={styles.filter}>
@@ -49,9 +50,9 @@ const browsePage = () => {
         </div>
 
       </div>
+      </MerchantContext>
 
     </div>
-    </FilterContext>
   )
 }
 

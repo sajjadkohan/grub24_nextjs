@@ -62,7 +62,21 @@ export default function SwiperSlider({data}) {
            
         modules={[Scrollbar,Navigation]}
         spaceBetween={60}
-        slidesPerView={width > 767? 3.5 : 1.1}
+        breakpoints={{
+            640: {
+              slidesPerView: 1.1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3.5,
+              spaceBetween: 60,
+            },
+            1024: {
+              slidesPerView: 3.5,
+              spaceBetween: 60,
+            },
+          }}
+        // slidesPerView={width > 767? 3.5 : 1.1}
         className={styles.mySwiper+' '+"mySwiper pb60"}
       >
         {
