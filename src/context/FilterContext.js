@@ -14,11 +14,6 @@ export function FilterContext ({children}) {
     const getSearchParams = useSearchParams();
     const getPathName = usePathname();
 
-    useEffect(() => {
-        let newUrl = window.location.href.split('/browse')[1];
-        console.log(newUrl);
-    },[])
-
     // context
     const {
         dataMerchantState,
@@ -33,9 +28,10 @@ export function FilterContext ({children}) {
         setHasMore
         } = useContext(MerchantCtx);
 
-    const[paramsState,setParamsState] = useState('');
+    const[paramsState,setParamsState] = useState('empty');
     const[newParamsState,setNewParamsState] = useState('');
-
+    let allParams = '';
+    let newParams2 = '';
 
     const [defaultState,setDefaultState] = useState({
         title : 'defaultState',
@@ -105,6 +101,12 @@ export function FilterContext ({children}) {
         }
     }
 
+    useEffect(() => {
+        let newUrl = window.location.href.split('/browse')[1];
+        console.log(newUrl);
+        setParamsState(`${newUrl}`)
+    },[])
+
     // functions for get data
     const getDataFn = async () => {
         // setHasMore(true);
@@ -114,6 +116,12 @@ export function FilterContext ({children}) {
 
         await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=1${newUrl2}`)
         .then(res => {
+            // console.log(window.location.href);
+            // allParams = window.location.href;
+            // newParams2 = allParams.split('/browse?')[1];
+            // console.log(newUrl2);
+            // newUrl2? setParamsState(`${newUrl2}`) : setParamsState('');
+            
             // setPageNumber(1);
             res.data.result[0].list? setMerchantList(res.data.result[0].list) : [];
             setDataMerchantState(res.data.result[0].cuis);
@@ -122,8 +130,7 @@ export function FilterContext ({children}) {
     } 
 
     const applySingleFilter = async (title,valueFilter) => {
-        let allParams = '';
-        let newParams2 = '';
+
         // setHasMore(true);
         setPageNumber(2);
         switch (title) {

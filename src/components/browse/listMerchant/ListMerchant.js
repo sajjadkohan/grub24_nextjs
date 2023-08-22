@@ -150,6 +150,7 @@ const ListMerchant = ({  }) => {
   useEffect(() => {
     // applySingleFilter('defaultState','');
     getDataFn();
+    console.log('LIST MERCHANT',paramsState);
     // fetchItems();
   }, []);
 

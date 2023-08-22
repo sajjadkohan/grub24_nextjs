@@ -5,9 +5,10 @@ import { filterCtx } from '@/context/FilterContext';
 
 const SortBy = () => {
     // context => use contex for set method and toggle active class
-    const {sortBy,byDelivery,applySingleFilter} = useContext(filterCtx);
+    const {sortBy,byDelivery,applySingleFilter,paramsState} = useContext(filterCtx);
   return (
     <>
+    <h2>{paramsState}</h2>
     <div className='brBottom'></div>
     <div className={styles.sortBy+' '+styles.parent}>
         <div className={styles.titleFilter+' '+'roboto700'}>Sort by</div>
