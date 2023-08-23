@@ -23,20 +23,11 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <AuthWrapper>
           <ViewWrapper>
-<<<<<<< HEAD
-            <MerchantContext>
-              <Header/>
-              <LoginModal />
-                  {children}
-              <Footer/>
-            </MerchantContext>
-=======
             
             <Header/>
             <LoginModal />
                 {children}
             <Footer/>
->>>>>>> e59a2541abd2ce636c66194e92e2391cc7a6545a
           </ViewWrapper>
         </AuthWrapper>
         </body>

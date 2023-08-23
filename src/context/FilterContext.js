@@ -135,11 +135,6 @@ export function FilterContext ({children}) {
         setPageNumber(2);
         switch (title) {
 
-<<<<<<< HEAD
-    const applySingleFilter = async (title,valueFilter,activeClass) => {
-    switch (title) {
-=======
->>>>>>> e59a2541abd2ce636c66194e92e2391cc7a6545a
         case 'sortBy':
 
             setHasMore(true);
@@ -165,16 +160,6 @@ export function FilterContext ({children}) {
 
             // set state for styles (toggle active class)
             setByDelivery({...byDelivery,value : valueFilter});
-<<<<<<< HEAD
-            await axios.get(`${BASE_URL}/NextApi/BrowsItems?page=${pageNumber}${byDelivery.key}=${byDelivery.value}`)
-            .then(res => {
-                setMerchantList(res.data.result[0].list);
-                setDataMerchantState(res.data.result[0].cuis);
-                setTotalMerchant(res.data.result[0].total);
-            })
-            break;
-    
-=======
 
             allParams = `${getPathName}?${byDelivery.key}=${valueFilter}`;
             router.push(allParams);
@@ -216,7 +201,6 @@ export function FilterContext ({children}) {
         // }
         // getDataDefault();
         break;
->>>>>>> e59a2541abd2ce636c66194e92e2391cc7a6545a
         default:
             break;
     }

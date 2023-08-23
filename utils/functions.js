@@ -54,7 +54,7 @@ const fetchData = async (api="",method="GET",data=null,msg="") => {
 
     // const res = await axios.post(api,data,{withCredentials:true});
     axios.defaults.withCredentials = true;
-    await axios[method=="POST"?'post':'get'](`${api}&timestamp=${new Date().getTime()}`,data).then( res => {
+    await axios[method=="POST"?'post':'get'](api,data,{withCredentials:true}).then( res => {
       if(res.data.code === 200){
         result.data = res.data.result?res.data.result:null
         result.message = msg;
